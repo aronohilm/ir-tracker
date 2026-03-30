@@ -41,7 +41,7 @@ companies:
   - name: "Íslandsbanki hf."
     ticker: ISB
     sector: Banks
-    ir_url: "https://www.islandsbanki.is/fjarfestatengslar/fjarhagsupplysingar"
+    ir_url: "https://www.islandsbanki.is/is/flokkur/bankinn/afkoma-tilkynningar"
     fetch_type: static
     link_pattern: null
     notify_filter: all
