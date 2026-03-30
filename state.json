@@ -368,17 +368,215 @@
         "discovered_at": "2026-03-30T23:28:38.730323+00:00"
       }
     },
-    "last_scan": "2026-03-30T23:28:38.947728+00:00",
+    "last_scan": "2026-03-30T23:35:59.889220+00:00",
     "total_documents": 61
   },
   "SIMINN": {
     "known": {},
-    "last_scan": "2026-03-30T23:28:40.823287+00:00",
+    "last_scan": "2026-03-30T23:36:01.625438+00:00",
     "total_documents": 0
   },
   "ARION": {
     "known": {},
-    "last_scan": "2026-03-30T23:28:43.540097+00:00",
+    "last_scan": "2026-03-30T23:36:04.259661+00:00",
     "total_documents": 0
+  },
+  "ISB": {
+    "known": {
+      "e68c3ddea026": {
+        "url": "https://cdn.islandsbanki.is/image/upload/v1/documents/ISB_Condensed_Consolidated_Interim_Financial_Statements_first_quarter_2025.pdf",
+        "text": "ISB_Condensed_Consolidated_Interim_Financial_Statements_first_quarter_2025.pdf",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-03-30T23:36:06.177445+00:00"
+      },
+      "06000ad9f948": {
+        "url": "https://cdn.islandsbanki.is/image/upload/v1/documents/ISB_1F25Frettatilkynning.pdf",
+        "text": "ISB_1F25Frettatilkynning.pdf",
+        "doc_type": "investor_presentation",
+        "discovered_at": "2026-03-30T23:36:06.552486+00:00"
+      },
+      "11b2c75bb0d9": {
+        "url": "https://cdn.islandsbanki.is/image/upload/v1/documents/ISB_1Q25_InvestorPresentation.pdf",
+        "text": "ISB_1Q25_InvestorPresentation.pdf",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:36:06.815805+00:00"
+      },
+      "4feff7736c96": {
+        "url": "https://cdn.islandsbanki.is/image/upload/v1/documents/FactSheet_1Q25.pdf",
+        "text": "FactSheet_1Q25.pdf",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:36:07.108284+00:00"
+      },
+      "c010c15cc9c4": {
+        "url": "https://cdn.islandsbanki.is/image/upload/v1/documents/1Q25Factbook.pdf",
+        "text": "1Q25Factbook.pdf",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:36:07.316709+00:00"
+      },
+      "4c39e000ddd8": {
+        "url": "https://cdn.islandsbanki.is/raw/upload/v1/documents/1Q25Factbook.xlsx",
+        "text": "1Q25Factbook.xlsx",
+        "doc_type": "spreadsheet",
+        "discovered_at": "2026-03-30T23:36:07.541491+00:00"
+      },
+      "1d77c6bdf756": {
+        "url": "https://cdn.islandsbanki.is/raw/upload/v1/documents/AdditionalPillar3Disclosure2025Q1_final.xlsx",
+        "text": "AdditionalPillar3Disclosure2025Q1_final.xlsx",
+        "doc_type": "risk_report",
+        "discovered_at": "2026-03-30T23:36:07.879301+00:00"
+      },
+      "2f03936456ef": {
+        "url": "https://cdn.islandsbanki.is/image/upload/v1/documents/ISB_Condensed_Consolidated_Interim_Financial_Statements_first_half_2025.pdf",
+        "text": "ISB_Condensed_Consolidated_Interim_Financial_Statements_first_half_2025.pdf",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-03-30T23:36:08.034586+00:00"
+      },
+      "53887be564df": {
+        "url": "https://cdn.islandsbanki.is/image/upload/v1/documents/ISB_2F25_Frettatilkynning.pdf",
+        "text": "ISB_2F25_Frettatilkynning.pdf",
+        "doc_type": "investor_presentation",
+        "discovered_at": "2026-03-30T23:36:08.337255+00:00"
+      },
+      "d5688e53c33b": {
+        "url": "https://cdn.islandsbanki.is/image/upload/v1/documents/ISB_2Q25_Investor_Presentation.pdf",
+        "text": "ISB_2Q25_Investor_Presentation.pdf",
+        "doc_type": "investor_presentation",
+        "discovered_at": "2026-03-30T23:36:08.599100+00:00"
+      },
+      "8257505433ba": {
+        "url": "https://cdn.islandsbanki.is/image/upload/v1/documents/2Q25_Factsheet.pdf",
+        "text": "2Q25_Factsheet.pdf",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:36:08.860277+00:00"
+      },
+      "cbcca95adb85": {
+        "url": "https://cdn.islandsbanki.is/image/upload/v1/documents/2Q25Factbook.pdf",
+        "text": "2Q25Factbook.pdf",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:36:09.090756+00:00"
+      },
+      "c4dbf5de9afb": {
+        "url": "https://cdn.islandsbanki.is/raw/upload/v1/documents/2Q25Factbook.xlsx",
+        "text": "2Q25Factbook.xlsx",
+        "doc_type": "spreadsheet",
+        "discovered_at": "2026-03-30T23:36:09.351067+00:00"
+      },
+      "ab13ebbb8ba0": {
+        "url": "https://cdn.islandsbanki.is/raw/upload/v1/documents/AdditionalPillar3Disclosure2025_Q2_final.xlsx",
+        "text": "AdditionalPillar3Disclosure2025_Q2_final.xlsx",
+        "doc_type": "risk_report",
+        "discovered_at": "2026-03-30T23:36:09.711273+00:00"
+      },
+      "65298975059e": {
+        "url": "https://cdn.islandsbanki.is/image/upload/v1/documents/ISB_Condensed_Consolidated_Interim_Financial_Statements_third_quarter_2025.pdf",
+        "text": "ISB_Condensed_Consolidated_Interim_Financial_Statements_third_quarter_2025.pdf",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-03-30T23:36:09.928697+00:00"
+      },
+      "027399cd2aa1": {
+        "url": "https://cdn.islandsbanki.is/image/upload/v1/documents/ISB_3F25_Frettatilkynning.pdf",
+        "text": "ISB_3F25_Frettatilkynning.pdf",
+        "doc_type": "investor_presentation",
+        "discovered_at": "2026-03-30T23:36:10.224454+00:00"
+      },
+      "19db263d3429": {
+        "url": "https://cdn.islandsbanki.is/image/upload/v1/documents/ISB_3Q_2025_InvestorPresentation.pdf",
+        "text": "ISB_3Q_2025_InvestorPresentation.pdf",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:36:10.457518+00:00"
+      },
+      "47123dc44b94": {
+        "url": "https://cdn.islandsbanki.is/image/upload/v1/documents/Factsheet_3Q25.pdf",
+        "text": "Factsheet_3Q25.pdf",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:36:10.751439+00:00"
+      },
+      "26b2c7263319": {
+        "url": "https://cdn.islandsbanki.is/image/upload/v1/documents/3Q25Factbook.pdf",
+        "text": "3Q25Factbook.pdf",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:36:10.906452+00:00"
+      },
+      "b090e38fad9f": {
+        "url": "https://cdn.islandsbanki.is/raw/upload/v1/documents/3Q25Factbook.xlsx",
+        "text": "3Q25Factbook.xlsx",
+        "doc_type": "spreadsheet",
+        "discovered_at": "2026-03-30T23:36:11.139183+00:00"
+      },
+      "68e09ad223a6": {
+        "url": "https://cdn.islandsbanki.is/raw/upload/v1/documents/AdditionalPillar3Disclosure2025Q3_final.xlsx",
+        "text": "AdditionalPillar3Disclosure2025Q3_final.xlsx",
+        "doc_type": "risk_report",
+        "discovered_at": "2026-03-30T23:36:11.533757+00:00"
+      },
+      "c70f9e4d01e9": {
+        "url": "https://cdn.islandsbanki.is/image/upload/v1/documents/ISB_Samstaeduarsreikningur_2025.pdf",
+        "text": "ISB_Samstaeduarsreikningur_2025.pdf",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-03-30T23:36:11.759913+00:00"
+      },
+      "467e896ecde7": {
+        "url": "https://cdn.islandsbanki.is/image/upload/v1/documents/ISB_4F25_Frettatilkynning.pdf",
+        "text": "ISB_4F25_Frettatilkynning.pdf",
+        "doc_type": "investor_presentation",
+        "discovered_at": "2026-03-30T23:36:12.194588+00:00"
+      },
+      "4aa1636b42d9": {
+        "url": "https://cdn.islandsbanki.is/image/upload/v1/documents/ISB_4Q_2025_InvestorPresentation.pdf",
+        "text": "ISB_4Q_2025_InvestorPresentation.pdf",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:36:12.433200+00:00"
+      },
+      "34a84b2b6cd5": {
+        "url": "https://cdn.islandsbanki.is/image/upload/v1/documents/Factsheet_4Q25_ISL.pdf",
+        "text": "Factsheet_4Q25_ISL.pdf",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:36:12.656224+00:00"
+      },
+      "455080c41a1a": {
+        "url": "https://cdn.islandsbanki.is/image/upload/v1/documents/4Q25_FY2025_Factbook.pdf",
+        "text": "4Q25_FY2025_Factbook.pdf",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:36:12.815501+00:00"
+      },
+      "1c5f2ef268d9": {
+        "url": "https://cdn.islandsbanki.is/raw/upload/v1/documents/4Q25_FY2025_Factbook.xlsx",
+        "text": "4Q25_FY2025_Factbook.xlsx",
+        "doc_type": "spreadsheet",
+        "discovered_at": "2026-03-30T23:36:13.078578+00:00"
+      },
+      "cd8d9b089cf9": {
+        "url": "https://cdn.islandsbanki.is/image/upload/v1/documents/I%CC%81slandsbanki-Pillar-3-Report-2025.pdf",
+        "text": "I%CC%81slandsbanki-Pillar-3-Report-2025.pdf",
+        "doc_type": "risk_report",
+        "discovered_at": "2026-03-30T23:36:13.383867+00:00"
+      },
+      "4feea2a0d6e9": {
+        "url": "https://cdn.islandsbanki.is/raw/upload/v1/documents/AdditionalPillar3Disclosure2025FY.xlsx",
+        "text": "AdditionalPillar3Disclosure2025FY.xlsx",
+        "doc_type": "risk_report",
+        "discovered_at": "2026-03-30T23:36:13.673100+00:00"
+      },
+      "a8c41f1d7f70": {
+        "url": "https://cdn.islandsbanki.is/raw/upload/documents/549300PZMFIQR79Q0T97-2025-12-31-1-en.zip",
+        "text": "ESEF Taxonomy (zip)",
+        "doc_type": "archive",
+        "discovered_at": "2026-03-30T23:36:13.919933+00:00"
+      },
+      "d0a3512dd079": {
+        "url": "https://cdn.islandsbanki.is/image/upload/v1/documents/ISB_2025_FINAL.pdf",
+        "text": "ISB_2025_FINAL.pdf",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:36:15.278604+00:00"
+      },
+      "31dffe1a7c5b": {
+        "url": "https://cdn.islandsbanki.is/image/upload/v1/documents/esg-factbook-2025.pdf",
+        "text": "esg-factbook-2025.pdf",
+        "doc_type": "sustainability",
+        "discovered_at": "2026-03-30T23:36:16.091094+00:00"
+      }
+    },
+    "last_scan": "2026-03-30T23:36:16.336183+00:00",
+    "total_documents": 32
   }
 }
