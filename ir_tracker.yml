@@ -1,0 +1,123 @@
+# .github/workflows/ir_tracker.yml
+#
+# Runs daily at 07:30 UTC (09:30 Reykjavík time) — after Icelandic markets open.
+# Also runs on push so you can test immediately.
+#
+# SETUP (one-time):
+# 1. Create a private GitHub repo and push this project to it
+# 2. Go to Settings → Secrets and variables → Actions → New repository secret
+# 3. Add these secrets:
+#    - NOTIFY_EMAIL_TO   : your email address
+#    - NOTIFY_EMAIL_FROM : your Gmail address
+#    - NOTIFY_EMAIL_PASS : Gmail App Password
+#      (get at: myaccount.google.com/apppasswords → "Mail" → "Other")
+#
+# Optional Slack:
+#    - SLACK_WEBHOOK_URL : from api.slack.com/apps → Incoming Webhooks
+
+name: IR Document Tracker
+
+on:
+  schedule:
+    # 07:30 UTC = 09:30 Reykjavik (UTC+0 in winter, UTC+0 in summer too — Iceland has no DST)
+    - cron: "30 7 * * 1-5"   # Weekdays only — reports don't drop on weekends
+
+  workflow_dispatch:          # Manual trigger from GitHub UI (useful for testing)
+    inputs:
+      dry_run:
+        description: "Dry run (no downloads, no notifications)"
+        type: boolean
+        default: false
+
+  push:
+    branches: [main]
+    paths:
+      - "companies.yml"       # Also run when you add a new company
+
+jobs:
+  scan:
+    name: Scan IR Pages
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    permissions:
+      contents: write         # Needed to commit state.json back to repo
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Install Playwright (only if any company uses fetch_type: js)
+        run: |
+          # Check if any company needs JS rendering
+          if grep -q "fetch_type: js" companies.yml; then
+            pip install playwright
+            playwright install chromium --with-deps
+          else
+            echo "No JS-rendered pages configured, skipping Playwright install"
+          fi
+
+      - name: Run IR scan
+        env:
+          NOTIFY_EMAIL_TO:   ${{ secrets.NOTIFY_EMAIL_TO }}
+          NOTIFY_EMAIL_FROM: ${{ secrets.NOTIFY_EMAIL_FROM }}
+          NOTIFY_EMAIL_PASS: ${{ secrets.NOTIFY_EMAIL_PASS }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          DRY_RUN_FLAG=""
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            DRY_RUN_FLAG="--dry-run"
+          fi
+          python main.py $DRY_RUN_FLAG --output-json new_docs.json
+
+      - name: Show results summary
+        run: |
+          if [ -f new_docs.json ]; then
+            COUNT=$(python -c "import json; d=json.load(open('new_docs.json')); print(len(d))")
+            echo "### IR Tracker Results" >> $GITHUB_STEP_SUMMARY
+            echo "**$COUNT new document(s) found**" >> $GITHUB_STEP_SUMMARY
+            if [ "$COUNT" -gt "0" ]; then
+              python -c "
+          import json
+          docs = json.load(open('new_docs.json'))
+          for d in docs:
+              print(f'- [{d[\"ticker\"]}] {d[\"doc_type\"]}: {d[\"text\"]}')
+              print(f'  {d[\"url\"]}')
+          " >> $GITHUB_STEP_SUMMARY
+            fi
+          fi
+
+      - name: Commit updated state back to repo
+        # Only commit if state.json changed (i.e., something new was found or scanned)
+        run: |
+          git config user.name  "ir-tracker[bot]"
+          git config user.email "ir-tracker[bot]@users.noreply.github.com"
+          git add state.json
+          # Only commit if there are actual changes
+          if git diff --staged --quiet; then
+            echo "No state changes to commit"
+          else
+            git commit -m "chore: update scan state [skip ci]"
+            git push
+          fi
+
+      - name: Upload downloaded documents as artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ir-documents-${{ github.run_id }}
+          path: downloads/
+          retention-days: 90      # Keep for 90 days in GitHub (free tier: 500MB)
+          if-no-files-found: ignore

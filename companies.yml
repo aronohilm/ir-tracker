@@ -1,0 +1,66 @@
+# companies.yml
+# One entry per company. This is the ONLY file you need to edit when adding companies.
+#
+# fetch_type options:
+#   static   - plain HTML, works with requests (fast, most Icelandic IR pages)
+#   js       - JavaScript-rendered, needs Playwright (slower, use only if needed)
+#
+# link_pattern: regex to filter which hrefs count as "new documents"
+#   - Leave as null to catch all PDF/XLSX links on the page
+#   - Use a pattern like "arsreikningur|annual" to only watch for annual reports
+#
+# notify_filter: which document types trigger a notification (all = everything)
+#   Options: all, annual_report, quarterly, investor_presentation, press_release
+
+companies:
+
+  - name: "Kvika banki hf."
+    ticker: KVIKA
+    sector: Banks
+    ir_url: "https://kvika.is/fjarfestaupplysingar/?category=financialInformation&subCategory=0"
+    fetch_type: static
+    link_pattern: null  # catch all PDFs
+    notify_filter: all
+
+  - name: "Síminn hf."
+    ticker: SIMINN
+    sector: Telecoms
+    ir_url: "https://www.siminn.is/um-siminn/fjarfestatengslar/arsskyrslur/"
+    fetch_type: static
+    link_pattern: null
+    notify_filter: all
+
+  - name: "Arion banki hf."
+    ticker: ARION
+    sector: Banks
+    ir_url: "https://www.arionbanki.is/fjarfestaupplysingar/fjarhagsupplysingar/"
+    fetch_type: static
+    link_pattern: null
+    notify_filter: all
+
+  - name: "Íslandsbanki hf."
+    ticker: ISB
+    sector: Banks
+    ir_url: "https://www.islandsbanki.is/fjarfestatengslar/fjarhagsupplysingar"
+    fetch_type: static
+    link_pattern: null
+    notify_filter: all
+
+  - name: "Landsbankinn hf."
+    ticker: LBANK
+    sector: Banks
+    ir_url: "https://www.landsbankinn.is/um-landsbankann/fjarfestatengslar/fjarhagsupplysingar/"
+    fetch_type: static
+    link_pattern: null
+    notify_filter: all
+
+  # Add remaining 24 companies below using the same format.
+  # Template:
+  #
+  # - name: "Company Name hf."
+  #   ticker: TICKER
+  #   sector: "Sector Name"
+  #   ir_url: "https://..."
+  #   fetch_type: static   # or js
+  #   link_pattern: null
+  #   notify_filter: all
