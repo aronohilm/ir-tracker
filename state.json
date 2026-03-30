@@ -1,0 +1,384 @@
+{
+  "KVIKA": {
+    "known": {
+      "ad9921a405ad": {
+        "url": "https://kvika.cdn.prismic.io/kvika/aYyBk90YXLCxVrtN_Sja%CC%81lfb%C3%A6rnisky%CC%81rsla2025-1.pdf",
+        "text": "Sjálfbærniskýrsla 2025",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:23.189178+00:00"
+      },
+      "80250c6de312": {
+        "url": "https://kvika.cdn.prismic.io/kvika/aYy0td0YXLCxVsk8_kvika-consolidated-financial-statements-31-12-2025.pdf",
+        "text": "Ársreikningur 2025",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-03-30T23:28:23.881760+00:00"
+      },
+      "ac9e30047bf3": {
+        "url": "https://kvika.cdn.prismic.io/kvika/aYy0xd0YXLCxVsk-_fjarfestakynning-12m-2025.pdf",
+        "text": "Fjárfestakynning",
+        "doc_type": "investor_presentation",
+        "discovered_at": "2026-03-30T23:28:23.975659+00:00"
+      },
+      "fd76efb39b6a": {
+        "url": "https://kvika.cdn.prismic.io/kvika/aYy1IN0YXLCxVslW_254900wr3i1z9npc7d84-2025-12-31-en.zip",
+        "text": "ESEF Taxonomy (zip)",
+        "doc_type": "archive",
+        "discovered_at": "2026-03-30T23:28:24.056967+00:00"
+      },
+      "be98120facc9": {
+        "url": "https://kvika.cdn.prismic.io/kvika/aYy02N0YXLCxVslB_Uppgj%C3%B6r12M2025-Fr%C3%A9ttatilkynning.pdf",
+        "text": "Fréttatilkynning",
+        "doc_type": "investor_presentation",
+        "discovered_at": "2026-03-30T23:28:24.488203+00:00"
+      },
+      "ed7c420dad69": {
+        "url": "https://kvika.cdn.prismic.io/kvika/aY25GN0YXLCxVuF__KvikaFY2025PillarIIIDisclosuresFinal.xlsx",
+        "text": "Áhættuskýrsla – viðauki 2025",
+        "doc_type": "risk_report",
+        "discovered_at": "2026-03-30T23:28:24.666688+00:00"
+      },
+      "d0904cc34c70": {
+        "url": "https://kvika.cdn.prismic.io/kvika/aBt5SSdWJ-7kRtzD_Kvika-CondensedInterimConsolidatedFinancialStatements31.03.25.pdf",
+        "text": "Árshlutareikningur Q1 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-03-30T23:28:24.741186+00:00"
+      },
+      "84990924fa0e": {
+        "url": "https://kvika.cdn.prismic.io/kvika/aBvADCdWJ-7kRuhO_KvikaInvestorPresentationQ12025.pdf",
+        "text": "Fjárfestakynning",
+        "doc_type": "investor_presentation",
+        "discovered_at": "2026-03-30T23:28:25.014508+00:00"
+      },
+      "4df7b6247f03": {
+        "url": "https://kvika.cdn.prismic.io/kvika/aBt5bSdWJ-7kRtzP_Fr%C3%A9ttatilkynningQ12025.pdf",
+        "text": "Fréttatilkynning",
+        "doc_type": "investor_presentation",
+        "discovered_at": "2026-03-30T23:28:25.390537+00:00"
+      },
+      "002ceac4894b": {
+        "url": "https://kvika.cdn.prismic.io/kvika/aJyfN6Tt2nPbaR-T_Kvika-CondensedInterimConsolidatedFinancialStatements30.06.2025.pdf",
+        "text": "Árshlutareikningur Q2 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-03-30T23:28:25.619017+00:00"
+      },
+      "f6bd8f6b3bc9": {
+        "url": "https://kvika.cdn.prismic.io/kvika/aJyLZaTt2nPbaRgi_Kvika_Q22025Pillar3Disclosures.xlsx",
+        "text": "Áhættuskýrsla – viðauki Q2",
+        "doc_type": "risk_report",
+        "discovered_at": "2026-03-30T23:28:25.888781+00:00"
+      },
+      "101a288c9a9f": {
+        "url": "https://kvika.cdn.prismic.io/kvika/aJyfGKTt2nPbaR9-_KvikaInvestorPresentationQ22025.pdf",
+        "text": "Fjárfestakynning",
+        "doc_type": "investor_presentation",
+        "discovered_at": "2026-03-30T23:28:26.059710+00:00"
+      },
+      "132529186adf": {
+        "url": "https://kvika.cdn.prismic.io/kvika/aJye9qTt2nPbaR9y_Kvikafr%C3%A9ttatilkynningQ22025.pdf",
+        "text": "Fréttatilkynning",
+        "doc_type": "investor_presentation",
+        "discovered_at": "2026-03-30T23:28:26.479870+00:00"
+      },
+      "3e3f64debaff": {
+        "url": "https://kvika.cdn.prismic.io/kvika/aQt7QbpReVYa4GUp_Kvika-CondensedInterimConsolidatedFinancialStatements30.09.2025.pdf",
+        "text": "Árshlutareikningur Q3 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-03-30T23:28:26.692432+00:00"
+      },
+      "f2f074495b95": {
+        "url": "https://kvika.cdn.prismic.io/kvika/aQt7bbpReVYa4GUv_InvestorPresentationQ32025.pdf",
+        "text": "Fjárfestakynning",
+        "doc_type": "investor_presentation",
+        "discovered_at": "2026-03-30T23:28:26.961862+00:00"
+      },
+      "d9c4ee5759a2": {
+        "url": "https://kvika.cdn.prismic.io/kvika/aQt7j7pReVYa4GU2_Fr%C3%A9ttatilkynning.pdf",
+        "text": "Fréttatilkynning",
+        "doc_type": "investor_presentation",
+        "discovered_at": "2026-03-30T23:28:27.358398+00:00"
+      },
+      "f155d7073df9": {
+        "url": "https://kvika.cdn.prismic.io/kvika/aZ8l2cFoBIGEgybk_Dagskr%C3%A1a%C3%B0alfundarKvikubankahf.2026.pdf",
+        "text": "Dagskrá aðalfundar Kviku banka hf.",
+        "doc_type": "agm",
+        "discovered_at": "2026-03-30T23:28:27.578737+00:00"
+      },
+      "855e63782960": {
+        "url": "https://kvika.cdn.prismic.io/kvika/aZ8gzMFoBIGEgyWE_Fundarbo%C3%B0%C3%A1a%C3%B0alfundKvikubankahf.2026.pdf",
+        "text": "Fundarboð á aðalfund Kviku banka hf.",
+        "doc_type": "agm",
+        "discovered_at": "2026-03-30T23:28:27.773589+00:00"
+      },
+      "6d6be2a89361": {
+        "url": "https://kvika.cdn.prismic.io/kvika/aZ8hRcFoBIGEgyWr_Kvikabankihf._Till%C3%B6gurstj%C3%B3rnartila%C3%B0alfundar.pdf",
+        "text": "Tillögur stjórnar til aðalfundar Kviku banka hf. 2026",
+        "doc_type": "agm",
+        "discovered_at": "2026-03-30T23:28:28.014750+00:00"
+      },
+      "ea5ba189f0a0": {
+        "url": "https://kvika.cdn.prismic.io/kvika/aZ8hyMFoBIGEgyXE_Sk%C3%BDrslatilnefningarnefndarKviku2026.pdf",
+        "text": "Skýrsla tilnefningarnefndar Kviku banka hf.",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:28.258133+00:00"
+      },
+      "37d414631d51": {
+        "url": "https://kvika.cdn.prismic.io/kvika/aZ8h38FoBIGEgyXO_StarfskjarastefnaKvikubankahf.2026.pdf",
+        "text": "Starfskjarastefna Kviku banka hf. 2026",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:28.479771+00:00"
+      },
+      "ce3219aa0e7b": {
+        "url": "https://kvika.cdn.prismic.io/kvika/aZ8h98FoBIGEgyXW_Kvikabankihf._Sk%C3%BDrslaumframkv%C3%A6mdstarfskjarastefnu2025-2026.pdf",
+        "text": "Skýrsla um framkvæmd starfskjarastefnu Kviku banka hf 2026",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:28.721431+00:00"
+      },
+      "69b5337c0073": {
+        "url": "https://kvika.cdn.prismic.io/kvika/aZ8iDMFoBIGEgyXi_Kvikabankihf._Ar%C3%B0grei%C3%B0slustefna2026.pdf",
+        "text": "Arðgreiðslustefna Kviku banka hf. 2026",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:28.920201+00:00"
+      },
+      "e49871f9165f": {
+        "url": "https://kvika.cdn.prismic.io/kvika/aZ8iKcFoBIGEgyXt_Heildarfj%C3%B6ldihlutaogatkv%C3%A6%C3%B0a%C3%A1fundarbo%C3%B0sdegi.pdf",
+        "text": "Heildarfjöldi hluta og atkvæða á fundarboðsdegi",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:29.088688+00:00"
+      },
+      "18cc48cee601": {
+        "url": "https://kvika.cdn.prismic.io/kvika/aZ8iR8FoBIGEgyX2_Sam%C3%BEykktirKvikubankahf.2026.pdf",
+        "text": "Samþykktir Kviku banka hf. 2026",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:29.353764+00:00"
+      },
+      "779ae6aa2bfe": {
+        "url": "https://kvika.cdn.prismic.io/kvika/aZ8iWcFoBIGEgyX8_Umbo%C3%B0vegnaa%C3%B0alfundarKviku.pdf",
+        "text": "Umboð vegna aðalfundar Kviku banka hf. 2026",
+        "doc_type": "agm",
+        "discovered_at": "2026-03-30T23:28:29.594600+00:00"
+      },
+      "b5e13684efb1": {
+        "url": "https://kvika.cdn.prismic.io/kvika/aZ8ib8FoBIGEgyYC_Frambo%C3%B0tilstj%C3%B3rnarKvikubankahf.pdf",
+        "text": "Framboð til stjórnar Kviku banka hf. 2026",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:29.788743+00:00"
+      },
+      "6c5e8b7bae6e": {
+        "url": "https://kvika.cdn.prismic.io/kvika/abgVi7bci2UF6Dht_Uppl%C3%BDsingaruma%C3%B0ila%C3%ADframbo%C3%B0itilstj%C3%B3rnar2026.pdf",
+        "text": "Upplýsingar um aðila í framboði til stjórnar 2026",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:29.965833+00:00"
+      },
+      "a81d030eb691": {
+        "url": "https://kvika.cdn.prismic.io/kvika/aZ8ik8FoBIGEgyYL_Lei%C3%B0beiningarumskr%C3%A1ninguografr%C3%A6na%C3%BE%C3%A1ttt%C3%B6ku%C3%A1a%C3%B0alfundiKviku.pdf",
+        "text": "Leiðbeiningar um skráningu og rafræna þátttöku á aðalfundi Kviku banka hf. 2026",
+        "doc_type": "agm",
+        "discovered_at": "2026-03-30T23:28:30.178743+00:00"
+      },
+      "baf56e41368a": {
+        "url": "https://kvika.cdn.prismic.io/kvika/abvQ_7bci2UF6Q4f_%C3%81varpstj%C3%B3rnarformanns2026.pdf",
+        "text": "Ávarp stjórnarformanns Kviku",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:30.423346+00:00"
+      },
+      "c17d73df1cb2": {
+        "url": "https://kvika.cdn.prismic.io/kvika/abraU7bci2UF6NOm_Fundarger%C3%B0a%C3%B0alfundar2026.pdf",
+        "text": "Fundargerð aðalfundar Kviku banka hf. 2026",
+        "doc_type": "agm",
+        "discovered_at": "2026-03-30T23:28:30.656128+00:00"
+      },
+      "f441a28bbf8d": {
+        "url": "https://kvika.cdn.prismic.io/kvika/abrafrbci2UF6NOx_Ni%C3%B0urst%C3%B6%C3%B0ura%C3%B0alfundarKvikubankahf2026.pdf",
+        "text": "Niðurstöður aðalfundar Kviku banka hf. 2026",
+        "doc_type": "agm",
+        "discovered_at": "2026-03-30T23:28:30.856569+00:00"
+      },
+      "fbb35d6837b3": {
+        "url": "https://kvika.cdn.prismic.io/kvika/abrbBbbci2UF6NPJ_Results.pdf",
+        "text": "Niðurstöður atkvæðagreiðslu 2026",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:31.069737+00:00"
+      },
+      "f5d27fdd622e": {
+        "url": "https://kvika.cdn.prismic.io/kvika/6d774928-3a2e-437b-a643-e848d3f0a553_Kvika+Grunnl%C3%BDsing+j%C3%BAn%C3%AD+2022_signed.pdf",
+        "text": "Grunnlýsing júní 2022",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:31.245323+00:00"
+      },
+      "b15ca0c26f99": {
+        "url": "https://kvika.cdn.prismic.io/kvika/fa5d4941-54cd-4f69-aa82-76125456c713_kvika-grunnlysing-april-2021.pdf",
+        "text": "Grunnlýsing apríl 2021",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:31.519144+00:00"
+      },
+      "4f9a50e60c6f": {
+        "url": "https://kvika.cdn.prismic.io/kvika/7a15057d-7e8d-410c-ac23-023dcb7777f9_kvika-grunnlysing-081020.pdf",
+        "text": "Grunnlýsing 2020",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:31.776545+00:00"
+      },
+      "5e9c015b60cd": {
+        "url": "https://kvika.cdn.prismic.io/kvika/49f7836e-b418-4938-8938-30c531f54284_vidauki-vid-grunnlysingu.pdf",
+        "text": "Viðauki við grunnlýsingu 25.11.2020",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:32.036455+00:00"
+      },
+      "c1840c28c3c7": {
+        "url": "https://kvika.cdn.prismic.io/kvika/bda395ac-1393-4fbc-a67b-100722617417_Final+Terms+KVIKA+25+1201+GB_T2_undirrita%C3%B0+rafr%C3%A6nt.pdf",
+        "text": "FT",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:32.310971+00:00"
+      },
+      "65648e457b6f": {
+        "url": "https://kvika.cdn.prismic.io/kvika/11f721ef-0e48-4ccf-8f43-88a1d7658aeb_Final+Terms+KVIKA+25+1201+GB_signed.pdf",
+        "text": "FT",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:32.543593+00:00"
+      },
+      "0ea923730712": {
+        "url": "https://kvika.cdn.prismic.io/kvika/f286d21a-7c54-4e5d-a84c-df239fac174d_kvika-32-0112-final-terms_undirritad.pdf",
+        "text": "FT",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:32.751190+00:00"
+      },
+      "7eff5636d4bc": {
+        "url": "https://kvika.cdn.prismic.io/kvika/26084eea-11bb-4295-b9a2-e20162ddabaf_final-terms-kvika-24-1216-gb_signed.pdf",
+        "text": "FT",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:32.961004+00:00"
+      },
+      "1a9b1f0856da": {
+        "url": "https://kvika.cdn.prismic.io/kvika/5499d317-8c1d-4927-9e4c-ae420978d6e7_final-terms-kvika-24-1119-002.pdf",
+        "text": "FT",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:33.218315+00:00"
+      },
+      "bbc50a705bb7": {
+        "url": "https://kvika.cdn.prismic.io/kvika/14d269c0-164c-4b43-856d-18ba08c6585c_kvb-21-02-final-terms_2.pdf",
+        "text": "FT",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:33.489891+00:00"
+      },
+      "1b0309a0069f": {
+        "url": "https://kvika.cdn.prismic.io/kvika/c2a9424f-fbad-4227-9439-9ecbdd88a620_kvb-20-01-t3-final-terms-16.04.2021.pdf",
+        "text": "FT",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:33.727925+00:00"
+      },
+      "6d7cb9e70a02": {
+        "url": "https://kvika.cdn.prismic.io/kvika/2c5f8c64-ece5-4336-8257-cc6059e32ebd_kvb-19-01-t4-final-terms-23.02.2021.pdf",
+        "text": "FT",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:33.941158+00:00"
+      },
+      "e36fba2e3102": {
+        "url": "https://kvika.cdn.prismic.io/kvika/69708f95-6250-4998-b77d-04c574f711b5_kvb-21-01-final-terms-05.02.2021.pdf",
+        "text": "FT",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:34.211134+00:00"
+      },
+      "79008b5767f8": {
+        "url": "https://kvika.cdn.prismic.io/kvika/0f985443-09e0-4684-a1a8-5cfa47400c72_kvb-21-0621-final-terms.pdf",
+        "text": "FT",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:34.446671+00:00"
+      },
+      "4dfb1386f48e": {
+        "url": "https://kvika.cdn.prismic.io/kvika/adb61172-72e9-4e36-bcb0-50023fb80e78_kvb-21-0921-final-terms.pdf",
+        "text": "FT",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:34.770076+00:00"
+      },
+      "b912a199c45d": {
+        "url": "https://kvika.cdn.prismic.io/kvika/94be8040-7458-4fd1-a4f1-cdcdb101c7f0_kvb-21-0322-final-terms.pdf",
+        "text": "FT",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:35.068787+00:00"
+      },
+      "534462096120": {
+        "url": "https://kvika.cdn.prismic.io/kvika/743d0729-e6ba-4e13-9c5f-a7d6d6818161_kvb-19-01-t3-final-terms.pdf",
+        "text": "FT",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:35.330312+00:00"
+      },
+      "9c83e6289633": {
+        "url": "https://kvika.cdn.prismic.io/kvika/23013415-14ca-4ce4-8b8d-f2ab1593f323_kvb-20-01-t2-final-terms-25.11.2020.pdf",
+        "text": "FT",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:35.578926+00:00"
+      },
+      "801455bc7afc": {
+        "url": "https://kvika.cdn.prismic.io/kvika/76ccdaba-8c47-4fff-baff-6cf0d71dbbe1_kvb-20-01-final-terms_2.pdf",
+        "text": "FT",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:35.830712+00:00"
+      },
+      "72ecfe56c21e": {
+        "url": "https://www.kvika.is/asset/4056/vidauki-vid-grunnlysingu.pdf",
+        "text": "Umboðssamningur vegna skuldabréfaflokksins KVB 19 01",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:36.091221+00:00"
+      },
+      "af77ae0776de": {
+        "url": "https://kvika.cdn.prismic.io/kvika/Z4AwkpbqstJ99R_g_rating-action-moodys-ratings-affirms-kvika-04jul2024-pr-4926.pdf",
+        "text": "Síðasta mat",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:36.970364+00:00"
+      },
+      "70be32e2a2eb": {
+        "url": "https://kvika.cdn.prismic.io/kvika/a5512bd4-f1d4-42c2-8ad9-2ce3589c289f_Rating_Action-Moodys-places-Kvika-Bankis-13Feb2023-PR_473750.pdf",
+        "text": "Skjal",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:37.020531+00:00"
+      },
+      "bf83e72b70bd": {
+        "url": "https://kvika.cdn.prismic.io/kvika/a09861dc-b46e-4059-8c4e-286710c19934_Rating_Action-Moodys-upgrades-Kvika-Bankis-29Jun2022-PR_467438.pdf",
+        "text": "Skjal",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:37.220657+00:00"
+      },
+      "539ef308df0a": {
+        "url": "https://kvika.cdn.prismic.io/kvika/948af7fd-581a-48a9-bfe2-811292d4b4b3_Rating_Action-Moodys-assigns-first-time-11May2022-PR_465931.pdf",
+        "text": "Skjal",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:37.422038+00:00"
+      },
+      "4bfa7ce6d281": {
+        "url": "https://kvika.cdn.prismic.io/kvika/a841306b-9d55-49bd-8fbe-9e3d2056f7d8_Gr%C3%A6nn+fj%C3%A1rm%C3%B6gnunarrammi+Kviku+2024.pdf",
+        "text": "Grænn fjármögnunarrammi Kviku banka hf. 2024",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:37.646458+00:00"
+      },
+      "d6ed1d32c59f": {
+        "url": "https://kvika.cdn.prismic.io/kvika/7cb7779b-35b7-4aef-a023-0cf84ac42755_green-financing-1.8.pdf",
+        "text": "Græn fjármálaumgjörð Kviku banka hf. 2021",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:38.076215+00:00"
+      },
+      "4ca79ff78ef3": {
+        "url": "https://kvika.cdn.prismic.io/kvika/4beee96b-a791-4682-a906-b570a94e87fa_Sustainalytics+Second+Party+Opinion+on+Kvika%27s+Green+Funding+Framework+2024.pdf",
+        "text": "Ytra álit Sustainalytics 2024",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:38.511839+00:00"
+      },
+      "65c5890eb1ee": {
+        "url": "https://kvika.cdn.prismic.io/kvika/021a1325-1926-494b-bdaa-274a5ac24028_kvika-bank-green-financing-framework-second-party-opinion_october.pdf",
+        "text": "Ytra álit Sustainalytics 2021",
+        "doc_type": "pdf",
+        "discovered_at": "2026-03-30T23:28:38.730323+00:00"
+      }
+    },
+    "last_scan": "2026-03-30T23:28:38.947728+00:00",
+    "total_documents": 61
+  },
+  "SIMINN": {
+    "known": {},
+    "last_scan": "2026-03-30T23:28:40.823287+00:00",
+    "total_documents": 0
+  },
+  "ARION": {
+    "known": {},
+    "last_scan": "2026-03-30T23:28:43.540097+00:00",
+    "total_documents": 0
+  }
+}
