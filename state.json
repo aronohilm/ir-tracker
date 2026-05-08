@@ -224,7 +224,7 @@
         "discovered_at": "2026-05-08T13:02:52.471000+00:00"
       }
     },
-    "last_scan": "2026-05-08T13:02:52.471001+00:00",
+    "last_scan": "2026-05-08T23:52:44.224589+00:00",
     "total_documents": 37
   },
   "FESTI": {
@@ -278,7 +278,7 @@
         "discovered_at": "2026-05-08T16:49:53.234612+00:00"
       }
     },
-    "last_scan": "2026-05-08T21:35:55.531100+00:00",
+    "last_scan": "2026-05-08T23:52:45.736712+00:00",
     "total_documents": 8
   },
   "HAGA": {
@@ -440,7 +440,7 @@
         "discovered_at": "2026-05-08T21:35:53.817589+00:00"
       }
     },
-    "last_scan": "2026-05-08T21:36:40.108071+00:00",
+    "last_scan": "2026-05-08T23:52:47.571139+00:00",
     "total_documents": 26
   },
   "HAMP": {
@@ -510,10 +510,16 @@
         "text": "hamparsreikn2015-vefpress.pdf",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-08T23:30:00.000000+00:00"
+      },
+      "6e4c08319d8c": {
+        "url": "https://hampidjan.is/wp-content/uploads/2026/03/Hampidjan-hf.-Arsreikningur-2025-1.pdf",
+        "text": "Hampidjan-hf.-Arsreikningur-2025-1.pdf",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-08T23:52:53.791368+00:00"
       }
     },
-    "last_scan": "2026-05-08T22:12:46.294113+00:00",
-    "total_documents": 0
+    "last_scan": "2026-05-08T23:52:55.308751+00:00",
+    "total_documents": 2
   },
   "ICESEA": {
     "known": {
@@ -582,10 +588,46 @@
         "text": "",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-08T22:08:59.518570+00:00"
+      },
+      "13d8c5129500": {
+        "url": "https://www.icelandseafood.com/wp-content/uploads/2024/12/ISI-2019-Annual-Report.pdf",
+        "text": "",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-08T23:53:12.367047+00:00"
+      },
+      "99158ae06d1e": {
+        "url": "https://icelandseafood.com/wp-content/uploads/2024/11/Annual-Report-2023.pdf",
+        "text": "2023 Annual ReportDownload hereDownload",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-08T23:53:14.621871+00:00"
+      },
+      "0632fb8f01d0": {
+        "url": "https://icelandseafood.com/wp-content/uploads/2024/11/Annual-Report-2022.pdf",
+        "text": "2022 Annual ReportDownload hereDownload",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-08T23:53:17.027278+00:00"
+      },
+      "025aefd58350": {
+        "url": "https://icelandseafood.com/wp-content/uploads/2024/11/Annual-Report-2021.pdf",
+        "text": "2021 Annual ReportDownload hereDownload",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-08T23:53:19.355191+00:00"
+      },
+      "117e11c38144": {
+        "url": "https://icelandseafood.com/wp-content/uploads/2024/11/Annual-Report-2020.pdf",
+        "text": "2020 Annual ReportDownload hereDownload",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-08T23:53:21.472252+00:00"
+      },
+      "e4e6ed61872a": {
+        "url": "https://icelandseafood.com/wp-content/uploads/2024/12/Annual-Report-2019.pdf",
+        "text": "2019 Annual ReportDownload hereDownload",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-08T23:53:24.075976+00:00"
       }
     },
-    "last_scan": "2026-05-08T22:09:12.241446+00:00",
-    "total_documents": 49
+    "last_scan": "2026-05-08T23:53:26.204358+00:00",
+    "total_documents": 15
   },
   "ISF": {
     "known": {
@@ -630,10 +672,46 @@
         "text": "Endurskoðaður samstæðureikningur Ramma hf. 2020",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-08T13:03:03.786291+00:00"
+      },
+      "bcf20f867a0c": {
+        "url": "https://eadn-wc04-8177903.nxedge.io/wp-content/uploads/2023/07/6601691219_Isfelag_Vestmannaeyja_hf._ars_2022.pdf",
+        "text": "Endurskoðaður ársreikningur Ísfélags Vestmannaeyja hf. 2022",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-08T23:53:28.067906+00:00"
+      },
+      "8fb2b550c81e": {
+        "url": "https://eadn-wc04-8177903.nxedge.io/wp-content/uploads/2023/07/6812711559_Rammi_hf._ars_2022.pdf",
+        "text": "Endurskoðaður ársreikningur Ramma hf 2022",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-08T23:53:29.028386+00:00"
+      },
+      "a6bd06641687": {
+        "url": "https://eadn-wc04-8177903.nxedge.io/wp-content/uploads/2023/07/6601691219_Isfelag_Vestmannaeyja_hf._ars_2021-3.pdf",
+        "text": "Endurskoðaður ársreikningur Ísfélags Vestmannaeyja hf. 2021",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-08T23:53:29.933917+00:00"
+      },
+      "7243e59e1574": {
+        "url": "https://eadn-wc04-8177903.nxedge.io/wp-content/uploads/2023/07/6812711559_Rammi_hf._ars_2021.pdf",
+        "text": "Endurskoðaður ársreikningur Ramma hf 2021",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-08T23:53:30.046277+00:00"
+      },
+      "c30dc82cb022": {
+        "url": "https://eadn-wc04-8177903.nxedge.io/wp-content/uploads/2023/07/6601691219_Isfelag_Vestmannaeyja_hf._ars_2020-1.pdf",
+        "text": "Endurskoðaður ársreikningur Ísfélags Vestmannaeyja hf. 2020",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-08T23:53:30.946691+00:00"
+      },
+      "4b5b6815b4ab": {
+        "url": "https://eadn-wc04-8177903.nxedge.io/wp-content/uploads/2023/07/6812711559_Rammi_hf._ars_2020.pdf",
+        "text": "Endurskoðaður ársreikningur Ramma hf 2020",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-08T23:53:31.869100+00:00"
       }
     },
-    "last_scan": "2026-05-08T13:03:03.786293+00:00",
-    "total_documents": 7
+    "last_scan": "2026-05-08T23:53:32.761405+00:00",
+    "total_documents": 13
   },
   "KALD": {
     "known": {
@@ -764,7 +842,7 @@
         "discovered_at": "2026-05-08T13:03:16.742970+00:00"
       }
     },
-    "last_scan": "2026-05-08T21:36:12.092126+00:00",
+    "last_scan": "2026-05-08T23:55:11.557630+00:00",
     "total_documents": 12
   },
   "ARION": {
@@ -824,7 +902,7 @@
         "discovered_at": "2026-05-08T22:22:06.038729+00:00"
       }
     },
-    "last_scan": "2026-05-08T22:22:06.038731+00:00",
+    "last_scan": "2026-05-08T23:51:16.945538+00:00",
     "total_documents": 8
   },
   "AMRQ": {
@@ -918,9 +996,33 @@
         "text": "Year End Financial Statements 31st December 2017 and 2016",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-08T22:54:48.968148+00:00"
+      },
+      "607b10d4043c": {
+        "url": "https://wp-amaroq-minerals-2024.s3.eu-west-2.amazonaws.com/media/2024/05/3-ESTMA-Reporting-Template-2023-V2-FULL.pdf",
+        "text": "29 May 2024Extractive Sector Transparency Measures Act – 2023 Annual Report",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-08T23:51:52.568405+00:00"
+      },
+      "004c24de670e": {
+        "url": "https://wp-amaroq-minerals-2024.s3.eu-west-2.amazonaws.com/media/2023/06/Extractive-Sector-Transparency-Measures-Act-2022-Annual-report.xlsx",
+        "text": "14 Jun 2023Extractive Sector Transparency Measures Act 2022 Annual report",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-08T23:51:53.229149+00:00"
+      },
+      "9ae58699373c": {
+        "url": "https://wp-amaroq-minerals-2024.s3.eu-west-2.amazonaws.com/media/2022/05/AEX-ESTMA-Reporting-2021-12-31-on-website.pdf",
+        "text": "30 May 2022Extractive Sector Transparency Measures Act – 2021 Annual Report",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-08T23:51:54.305225+00:00"
+      },
+      "653960568254": {
+        "url": "https://wp-amaroq-minerals-2024.s3.eu-west-2.amazonaws.com/media/2021/05/AEX-ESTMA-Reporting-2020-12-31-filed-on-2021-05-28.pdf",
+        "text": "27 May 2021Extractive Sector Transparency Measures Act – 2020 Annual Report",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-08T23:51:54.964642+00:00"
       }
     },
-    "last_scan": "2026-05-08T22:54:50.369974+00:00",
+    "last_scan": "2026-05-08T23:51:55.588111+00:00",
     "total_documents": 18
   },
   "EIK": {
@@ -1070,7 +1172,7 @@
         "discovered_at": "2026-05-08T21:50:47.260129+00:00"
       }
     },
-    "last_scan": "2026-05-08T21:50:48.572018+00:00",
+    "last_scan": "2026-05-08T23:52:42.521518+00:00",
     "total_documents": 18
   },
   "BRIM": {
@@ -1268,7 +1370,7 @@
         "discovered_at": "2026-05-08T23:03:32.720318+00:00"
       }
     },
-    "last_scan": "2026-05-08T23:03:33.325157+00:00",
+    "last_scan": "2026-05-08T23:52:40.996223+00:00",
     "total_documents": 10
   },
   "SIMINN": {
@@ -1334,7 +1436,7 @@
         "discovered_at": "2024-03-01T00:00:00+00:00"
       }
     },
-    "last_scan": "2026-05-08T22:38:13.249558+00:00",
+    "last_scan": "2026-05-08T23:50:55.794329+00:00",
     "total_documents": 2
   },
   "BERA": {
@@ -1370,7 +1472,7 @@
         "discovered_at": "2026-05-08T23:30:00.000000+00:00"
       }
     },
-    "last_scan": "2026-05-08T23:09:47.372183+00:00",
+    "last_scan": "2026-05-08T23:52:01.306963+00:00",
     "total_documents": 4
   },
   "HEIMAR": {
@@ -1532,7 +1634,7 @@
         "discovered_at": "2026-05-08T21:57:52.852056+00:00"
       }
     },
-    "last_scan": "2026-05-08T21:57:55.076434+00:00",
+    "last_scan": "2026-05-08T23:53:05.188789+00:00",
     "total_documents": 26
   },
   "JBTM": {
@@ -1562,8 +1664,8 @@
         "discovered_at": "2026-05-08T23:30:00.000000+00:00"
       }
     },
-    "last_scan": "2026-05-08T13:21:21.033193+00:00",
-    "total_documents": 0
+    "last_scan": "2026-05-08T23:53:33.880900+00:00",
+    "total_documents": 4
   },
   "SYN": {
     "known": {
@@ -1634,7 +1736,7 @@
         "discovered_at": "2026-05-08T13:34:08.040454+00:00"
       }
     },
-    "last_scan": "2026-05-08T21:36:12.481083+00:00",
+    "last_scan": "2026-05-08T23:55:13.300857+00:00",
     "total_documents": 11
   },
   "SKEL": {
@@ -2138,7 +2240,7 @@
         "discovered_at": "2026-05-08T13:40:35.111698+00:00"
       }
     },
-    "last_scan": "2026-05-08T21:36:11.566284+00:00",
+    "last_scan": "2026-05-08T23:55:09.700214+00:00",
     "total_documents": 83
   },
   "SJOVA": {
@@ -2216,7 +2318,7 @@
         "discovered_at": "2026-05-08T14:29:48.019727+00:00"
       }
     },
-    "last_scan": "2026-05-08T21:34:54.996857+00:00",
+    "last_scan": "2026-05-08T23:54:53.524001+00:00",
     "total_documents": 12
   },
   "REITIR": {
@@ -2924,7 +3026,7 @@
         "discovered_at": "2026-05-08T14:46:22.978582+00:00"
       }
     },
-    "last_scan": "2026-05-08T21:35:33.733045+00:00",
+    "last_scan": "2026-05-08T23:54:25.544928+00:00",
     "total_documents": 117
   },
   "NOVA": {
@@ -3668,7 +3770,7 @@
         "discovered_at": "2026-05-08T14:59:18.359916+00:00"
       }
     },
-    "last_scan": "2026-05-08T21:35:46.479294+00:00",
+    "last_scan": "2026-05-08T23:53:47.164949+00:00",
     "total_documents": 123
   },
   "KVIKA": {
@@ -3842,7 +3944,7 @@
         "discovered_at": "2026-05-08T15:10:24.998390+00:00"
       }
     },
-    "last_scan": "2026-05-08T21:34:12.375772+00:00",
+    "last_scan": "2026-05-08T23:50:33.732091+00:00",
     "total_documents": 28
   },
   "ISB": {
@@ -4196,7 +4298,7 @@
         "discovered_at": "2026-05-08T21:37:31.900685+00:00"
       }
     },
-    "last_scan": "2026-05-08T21:38:07.260095+00:00",
+    "last_scan": "2026-05-08T23:51:46.293037+00:00",
     "total_documents": 58
   },
   "ICEAIR": {
@@ -4322,7 +4424,7 @@
         "discovered_at": "2023-12-31T00:00:00+00:00"
       }
     },
-    "last_scan": "2026-05-08T21:35:51.149903+00:00",
+    "last_scan": "2026-05-08T23:53:10.326135+00:00",
     "total_documents": 15
   }
 }
