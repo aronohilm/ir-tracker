@@ -9,6 +9,8 @@ State is stored in state.json — committed back to the repo by the GitHub Actio
 so it persists across runs without any external database.
 """
 
+from __future__ import annotations
+
 import re
 import json
 import hashlib
@@ -16,7 +18,7 @@ import logging
 import time
 from pathlib import Path
 from datetime import datetime, timezone
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urljoin, urlparse, unquote
 
 import requests
 import yaml
@@ -35,13 +37,13 @@ DOWNLOADS_DIR = Path(__file__).parent / "downloads"
 
 # Document type classifier based on filename / link text keywords
 DOC_TYPE_PATTERNS = {
-    "annual_report":            r"arsreikn|annual.report|financial.statement|samstæðureikn",
-    "quarterly":                r"q[1-4].20\d\d|árshluta|interim|q[1-4]-20",
-    "investor_presentation":    r"fjarfesta|investor.present|kynning",
-    "press_release":            r"frettatiln|press.release|uppgjör.*frétt",
-    "sustainability":           r"sjalfbaern|sustainab|esg",
-    "risk_report":              r"ahaettu|pillar|risk",
+    "quarterly":                r"q[1-4].20\d\d|[áa]rshluta|interim|q[1-4]-20|[1-4]f.20\d\d",
     "agm":                      r"adal|aðalfund|agm|annual.general",
+    "risk_report":              r"ahaettu|pillar|risk",
+    "sustainability":           r"sjalfbaern|sustainab|esg",
+    "investor_presentation":    r"investor.present|kynning",
+    "annual_report":            r"rsreikn|annual.?report|financial.statement|samstæðureikn|[áa]rssk|samst.*reikn|consolidated.fs",
+    "press_release":            r"frettatiln|press.release|uppgj",
 }
 
 HEADERS = {
@@ -111,8 +113,20 @@ def fetch_static(url: str, retries: int = 3) -> str | None:
     return None
 
 
-def fetch_js(url: str) -> str | None:
-    """Fetch JS-rendered page using Playwright"""
+def fetch_js(url: str, tab_selector: str | None = None,
+             wait_until: str = "networkidle",
+             open_selector: str | None = None,
+             tab_text_filter: str | None = None) -> str | None:
+    """Fetch JS-rendered page using Playwright.
+    If tab_selector is given, clicks each matching element and accumulates HTML
+    from every state so all dynamically-loaded content is captured.
+    open_selector: CSS selector for a trigger button that must be clicked to
+      open a dropdown/menu before each tab_selector item can be clicked (e.g.
+      Headless UI menus that close after each selection).
+    tab_text_filter: regex — only click tabs whose innerText matches (use to
+      skip non-year tabs like "Lykill" or "Eldra").
+    wait_until: 'networkidle' (default) or 'load' for pages that never settle.
+    """
     try:
         from playwright.sync_api import sync_playwright
     except ImportError:
@@ -123,20 +137,139 @@ def fetch_js(url: str) -> str | None:
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
             page = browser.new_page(extra_http_headers=HEADERS)
-            page.goto(url, wait_until="networkidle", timeout=30000)
-            # Wait a bit extra for any lazy-loading
+            page.goto(url, wait_until=wait_until, timeout=30000)
             page.wait_for_timeout(2000)
-            content = page.content()
+
+            if not tab_selector:
+                content = page.content()
+                browser.close()
+                return content
+
+            # Dismiss common cookie consent banners before interacting
+            cookie_selectors = [
+                ".ch2-allow-all-btn",           # CookieHub
+                "#onetrust-accept-btn-handler",  # OneTrust
+                ".cc-allow",                     # cookieconsent
+                "button[id*='accept']",
+                "button[class*='accept']",
+            ]
+            dismissed = False
+            for sel in cookie_selectors:
+                btn = page.query_selector(sel)
+                if btn:
+                    try:
+                        btn.click(timeout=3000)
+                        page.wait_for_timeout(800)
+                        log.info(f"  Dismissed cookie banner via {sel!r}")
+                        dismissed = True
+                        break
+                    except Exception:
+                        pass
+
+            # If click-based dismissal failed, force-remove overlay via JS
+            if not dismissed:
+                removed = page.evaluate("""() => {
+                    const selectors = [
+                        '.ch2-container', '.ch2', '[class*="ch2-"]',
+                        '#cookiehub', '[id*="cookiehub"]',
+                        '.onetrust-pc-dark-filter', '#onetrust-banner-sdk',
+                        '.cc-window', '[class*="cookie-banner"]',
+                        '[class*="cookie_banner"]', '[id*="cookie-banner"]',
+                    ];
+                    let removed = 0;
+                    for (const sel of selectors) {
+                        document.querySelectorAll(sel).forEach(el => {
+                            el.remove(); removed++;
+                        });
+                    }
+                    // Also remove pointer-events blocking from body
+                    document.body.style.pointerEvents = 'auto';
+                    document.body.style.overflow = 'auto';
+                    return removed;
+                }""")
+                if removed:
+                    log.info(f"  Force-removed {removed} cookie overlay element(s) via JS")
+                    page.wait_for_timeout(500)
+
+            # Click-through mode: collect HTML after clicking each matching element
+            all_html = page.content()
+
+            if open_selector:
+                # Dropdown mode: must re-open the menu before each item click.
+                # open_selector may point to a child element — we traverse up to
+                # the nearest <button> so the click registers correctly.
+                open_js = f"""() => {{
+                    const el = document.querySelector({open_selector!r});
+                    const btn = el?.tagName === 'BUTTON' ? el : el?.closest('button');
+                    btn?.click();
+                }}"""
+                # Open once to count items
+                page.evaluate(open_js)
+                page.wait_for_timeout(600)
+                tab_count = len(page.query_selector_all(tab_selector))
+                page.keyboard.press("Escape")
+                page.wait_for_timeout(300)
+                log.info(f"  Dropdown mode: {tab_count} items matching '{tab_selector}'")
+                for i in range(tab_count):
+                    try:
+                        page.evaluate(open_js)
+                        page.wait_for_timeout(600)
+                        tabs = page.query_selector_all(tab_selector)
+                        if i >= len(tabs):
+                            break
+                        label = tabs[i].inner_text().strip()
+                        page.evaluate("el => el.click()", tabs[i])
+                        page.wait_for_timeout(1200)
+                        all_html += page.content()
+                        log.info(f"    Selected {i+1}/{tab_count}: {label!r}")
+                    except Exception as e:
+                        log.warning(f"    Dropdown item {i+1} failed: {e}")
+            else:
+                first = page.query_selector(tab_selector)
+                is_select = first and first.evaluate("el => el.tagName") == "SELECT"
+
+                if is_select:
+                    # Native <select> element — use select_option then scrape once
+                    label = tab_text_filter or "Öll ár"
+                    page.select_option(tab_selector, label=label)
+                    page.wait_for_timeout(1500)
+                    all_html += page.content()
+                    log.info(f"  Select mode: chose '{label}' from '{tab_selector}'")
+                else:
+                    # Accordion / tab mode: elements stay in DOM, click each once
+                    tabs = page.query_selector_all(tab_selector)
+                    if tab_text_filter:
+                        tabs = [t for t in tabs
+                                if re.search(tab_text_filter, t.inner_text().strip())]
+                    tab_count = len(tabs)
+                    log.info(f"  Click-through: found {tab_count} elements matching '{tab_selector}'"
+                             + (f" (filtered by {tab_text_filter!r})" if tab_text_filter else ""))
+                    for i, tab in enumerate(tabs):
+                        try:
+                            label = tab.inner_text().strip()
+                            # JS click fires the real event and works even when
+                            # pointer-events are blocked (cookie banners, etc.)
+                            page.evaluate("el => el.click()", tab)
+                            page.wait_for_timeout(1200)
+                            all_html += page.content()
+                            log.info(f"    Clicked {i+1}/{tab_count}: {label!r}")
+                        except Exception as e:
+                            log.warning(f"    Click {i+1} failed: {e}")
+
             browser.close()
-            return content
+            return all_html
     except Exception as e:
         log.error(f"Playwright error for {url}: {e}")
         return None
 
 
-def fetch_page(url: str, fetch_type: str) -> str | None:
+def fetch_page(url: str, fetch_type: str, tab_selector: str | None = None,
+               wait_until: str = "networkidle",
+               open_selector: str | None = None,
+               tab_text_filter: str | None = None) -> str | None:
     if fetch_type == "js":
-        return fetch_js(url)
+        return fetch_js(url, tab_selector=tab_selector, wait_until=wait_until,
+                        open_selector=open_selector, tab_text_filter=tab_text_filter)
     return fetch_static(url)
 
 
@@ -174,17 +307,20 @@ def extract_document_links(html: str, base_url: str,
         if ext not in (".pdf", ".xlsx", ".xls", ".zip", ".docx"):
             continue
 
-        # Apply optional regex filter
-        if link_pattern:
-            if not re.search(link_pattern, full_url + " " + text, re.IGNORECASE):
-                continue
-
         # Deduplicate
         if full_url in seen_urls:
             continue
         seen_urls.add(full_url)
 
-        doc_type = classify_document(full_url, text)
+        # Decode URL for pattern matching / classification
+        decoded_url = unquote(full_url)
+
+        # Apply optional regex filter
+        if link_pattern:
+            if not re.search(link_pattern, decoded_url + " " + text, re.IGNORECASE):
+                continue
+
+        doc_type = classify_document(decoded_url, text)
         results.append({
             "url": full_url,
             "text": text or Path(parsed.path).name,
@@ -236,11 +372,16 @@ def scan_company(company: dict, state: dict, download: bool = True) -> list[dict
     url = company["ir_url"]
     fetch_type = company.get("fetch_type", "static")
     link_pattern = company.get("link_pattern")
+    tab_selector = company.get("tab_selector")
+    open_selector = company.get("open_selector")
+    tab_text_filter = company.get("tab_text_filter")
+    wait_until = company.get("wait_until", "networkidle")
     notify_filter = company.get("notify_filter", "all")
 
     log.info(f"Scanning: {name} ({ticker})")
 
-    html = fetch_page(url, fetch_type)
+    html = fetch_page(url, fetch_type, tab_selector=tab_selector, wait_until=wait_until,
+                      open_selector=open_selector, tab_text_filter=tab_text_filter)
     if not html:
         log.error(f"Failed to fetch page for {name}")
         return []
