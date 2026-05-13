@@ -10,7 +10,7 @@ on:
         type: boolean
         default: false
   push:
-    branches: [main]
+    branches: [main, cloudfront-refactor]
 
 jobs:
   scan:
@@ -34,20 +34,6 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Check if Playwright needed
-        id: check-js
-        run: echo "needed=$(grep -q 'fetch_type: js' companies.yml && echo true || echo false)" >> $GITHUB_OUTPUT
-
-      - name: Cache Playwright browsers
-        if: steps.check-js.outputs.needed == 'true'
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/ms-playwright
-          key: playwright-chromium-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
-
-      - name: Install Playwright chromium
-        if: steps.check-js.outputs.needed == 'true'
-        run: playwright install chromium --with-deps
 
       - name: Run IR scan
         env:
