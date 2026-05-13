@@ -1,246 +1,216 @@
 # companies.yml
-# One entry per company. This is the ONLY file you need to edit when adding companies.
+# All companies use the shared Nasdaq Iceland CloudFront CDN:
+#   https://d3q7p1a9jb8ol9.cloudfront.net/{TICKER}-Y-{year}.pdf
 #
-# fetch_type options:
-#   static   - plain HTML, works with requests (fast, most Icelandic IR pages)
-#   js       - JavaScript-rendered, needs Playwright (slower, use only if needed)
-#
-# link_pattern: regex to filter which hrefs count as "new documents"
-#   - Leave as null to catch all PDF/XLSX links on the page
-#   - Use a pattern like "arsreikn|annual.report" to only watch for annual reports
-#
-# notify_filter: which document types trigger a notification (all = everything)
-#   Options: all, annual_report, quarterly, investor_presentation, press_release
+# start_year: first year to check (set to current year to only watch for new ones)
+# notify_filter: annual_report for all (only annual reports are on this CDN)
 
 companies:
 
   - name: "Kvika banki hf."
     ticker: KVIKA
     sector: Banks
-    ir_url: "https://kvika.is/fjarfestaupplysingar/"
-    fetch_type: js
-    tab_selector: "div.sc-3488489d-2"
-    tab_text_filter: "^20[12][0-9]$"  # only year tabs, skip Lykill and Eldra
-    link_pattern: "rsreikn|annual.report|samstæðureikn|financial.statement|consolidated.financial"
+    fetch_type: url_template
+    url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/KVIKA-Y-{year}.pdf"
+    start_year: 2025
     notify_filter: annual_report
 
   - name: "Síminn hf."
     ticker: SIMINN
     sector: Telecoms
-    ir_url: "https://www.siminn.is/fjarfestar/uppgjor-og-arsskyrslur"
-    fetch_type: js
-    tab_selector: "button.group"
-    tab_text_filter: "^20[12][0-9]$"
-    link_pattern: "rsreikn|annual.report|samstæðureikn"
+    fetch_type: url_template
+    url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/SIMINN-Y-{year}.pdf"
+    start_year: 2025
     notify_filter: annual_report
 
   - name: "Arion banki hf."
     ticker: ARION
     sector: Banks
-    ir_url: "https://www.arionbanki.is/fjarfestaupplysingar/fjarhagsupplysingar/uppgjor-og-kynningar"
-    fetch_type: js
-    tab_selector: "button.MuiAccordionSummary-root"
-    tab_text_filter: "20[12][0-9]"
-    link_pattern: "rsreikn|annual.report|samstæðureikn"
+    fetch_type: url_template
+    url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/ARION-Y-{year}.pdf"
+    start_year: 2025
     notify_filter: annual_report
 
   - name: "Íslandsbanki hf."
     ticker: ISB
     sector: Banks
-    ir_url: "https://www.islandsbanki.is/is/flokkur/bankinn/afkoma-tilkynningar"
-    fetch_type: js
-    tab_selector: "button.tab"
-    tab_text_filter: "^20[12][0-9]$"
-    link_pattern: "rsreikn|annual.report|samstæðureikn|financial.statement"
+    fetch_type: url_template
+    url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/ISB-Y-{year}.pdf"
+    start_year: 2025
     notify_filter: annual_report
 
   - name: "Alvotech"
     ticker: ALVO
     sector: Healthcare
-    ir_url: "https://investors.alvotech.com/financials"
     fetch_type: url_template
     url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/ALVO-Y-{year}.pdf"
-    start_year: 2020
-    link_pattern: null
+    start_year: 2025
     notify_filter: annual_report
 
   - name: "Amaroq Minerals Ltd."
     ticker: AMRQ
     sector: Mining
-    ir_url: "https://www.amaroqminerals.com/investors/financials/"
-    fetch_type: js
-    link_pattern: "annual.report|audited.consolidated|year.end.financial"
+    fetch_type: url_template
+    url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/AMRQ-Y-{year}.pdf"
+    start_year: 2025
     notify_filter: annual_report
 
   - name: "Ölgerðin Egill Skallagrímsson hf."
     ticker: BERA
     sector: Consumer
-    ir_url: "https://berahf.is/fjarfestar/fjarhagsupplysingar/"
-    fetch_type: js
-    link_pattern: "rsreikn"
+    fetch_type: url_template
+    url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/BERA-Y-{year}.pdf"
+    start_year: 2025
     notify_filter: annual_report
 
   - name: "Brim hf."
     ticker: BRIM
     sector: Fisheries
-    ir_url: "https://www.brim.is/is/fjarfestar/fjarhagsupplysingar"
-    fetch_type: js
-    open_selector: "button.p-5"
-    tab_selector: "div.cursor-pointer"
-    tab_text_filter: "^20[12][0-9]$"
-    link_pattern: "rsreikn"
+    fetch_type: url_template
+    url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/BRIM-Y-{year}.pdf"
+    start_year: 2025
     notify_filter: annual_report
 
   - name: "Eik fasteignafélag hf."
     ticker: EIK
     sector: Real Estate
-    ir_url: "https://www.eik.is/allar-fjarhagsupplysingar"
-    fetch_type: static
-    link_pattern: "[Áá]rssk"
+    fetch_type: url_template
+    url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/EIK-Y-{year}.pdf"
+    start_year: 2025
     notify_filter: annual_report
 
   - name: "Eimskipafélag Íslands hf."
     ticker: EIM
     sector: Shipping
-    ir_url: "https://www.eimskip.com/investors/publications/"
-    fetch_type: static
-    link_pattern: "rsreikn|annual.report|samstæðureikn|financial.statement"
+    fetch_type: url_template
+    url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/EIM-Y-{year}.pdf"
+    start_year: 2025
     notify_filter: annual_report
 
   - name: "Festir hf."
     ticker: FESTI
     sector: Retail
-    ir_url: "https://www.festi.is/fjarhagsupplysingar"
-    fetch_type: static
-    link_pattern: "rsreikn|annual.report|samstæðureikn|financial.statement"
+    fetch_type: url_template
+    url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/FESTI-Y-{year}.pdf"
+    start_year: 2025
     notify_filter: annual_report
 
   - name: "Hagar hf."
     ticker: HAGA
     sector: Retail
-    ir_url: "https://www.hagar.is/fjarfestar/fjarhagsupplysingar/"
-    fetch_type: static
-    link_pattern: "rsreikn|annual.report|samstæðureikn|financial.statement"
+    fetch_type: url_template
+    url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/HAGA-Y-{year}.pdf"
+    start_year: 2025
     notify_filter: annual_report
 
   - name: "Hampiðjan hf."
     ticker: HAMP
     sector: Fisheries
-    ir_url: "https://hampidjan.is/fjarmal/fjarhagsskyrslur/"
-    fetch_type: js
-    link_pattern: "rsreikn|rssk"
+    fetch_type: url_template
+    url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/HAMP-Y-{year}.pdf"
+    start_year: 2025
     notify_filter: annual_report
 
   - name: "Heimar miðlun hf."
     ticker: HEIMAR
     sector: Media
-    ir_url: "https://www.heimar.is/fjarfestar/fjarhagsupplysingar/uppgjoer-og-skyrslur/"
-    fetch_type: js
-    tab_selector: "select.input-group__input"
-    tab_text_filter: "Öll ár"
-    link_pattern: "rsreikn|annual.report|samstæðureikn|financial.statement"
+    fetch_type: url_template
+    url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/HEIMAR-Y-{year}.pdf"
+    start_year: 2025
     notify_filter: annual_report
 
   - name: "Icelandair Group hf."
     ticker: ICEAIR
     sector: Airlines
-    ir_url: "https://www.icelandairgroup.com/investors"
-    fetch_type: js
-    wait_until: "load"
-    link_pattern: "annual.?report|arsskyrsla"
+    fetch_type: url_template
+    url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/ICEAIR-Y-{year}.pdf"
+    start_year: 2025
     notify_filter: annual_report
 
   - name: "Iceland Seafood International hf."
     ticker: ICESEA
     sector: Fisheries
-    ir_url: "https://icelandseafood.com/investors/reports/"
-    fetch_type: static
-    link_pattern: "Annual.Report|annual.report"
+    fetch_type: url_template
+    url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/ICESEA-Y-{year}.pdf"
+    start_year: 2025
     notify_filter: annual_report
 
   - name: "Ísfélagið hf."
     ticker: ISF
     sector: Fisheries
-    ir_url: "https://isfelag.is/arsreikningar/"
-    fetch_type: static
-    link_pattern: "rsreikn|annual.report|samstæðureikn|financial.statement"
+    fetch_type: url_template
+    url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/ISF-Y-{year}.pdf"
+    start_year: 2025
     notify_filter: annual_report
 
   - name: "JBT Marel Corporation"
     ticker: JBTM
     sector: Food Processing
-    ir_url: "https://ir.jbtmarel.com/company-information/annual-reports-proxy"
-    fetch_type: static
-    link_pattern: "annual.report"
+    fetch_type: url_template
+    url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/JBTM-Y-{year}.pdf"
+    start_year: 2025
     notify_filter: annual_report
 
   - name: "Kaldalón hf."
     ticker: KALD
     sector: Fisheries
-    ir_url: "https://kaldalon.is/fjarfestar/"
-    fetch_type: static
-    link_pattern: "rsreikn|annual.report|samstæðureikn|financial.statement"
+    fetch_type: url_template
+    url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/KALD-Y-{year}.pdf"
+    start_year: 2025
     notify_filter: annual_report
 
   - name: "Nova hf."
     ticker: NOVA
     sector: Telecoms
-    ir_url: "https://www.nova.is/baksvids/dagatal"
-    fetch_type: js
-    link_pattern: null  # Contentful CDN URLs — take all PDFs, rely on classification
+    fetch_type: url_template
+    url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/NOVA-Y-{year}.pdf"
+    start_year: 2025
     notify_filter: annual_report
 
   - name: "Oculis Holding plc"
     ticker: OCS
     sector: Healthcare
-    ir_url: "https://investors.oculis.com/disclosures"
     fetch_type: url_template
     url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/OCS-Y-{year}.pdf"
-    start_year: 2020
-    link_pattern: null
+    start_year: 2025
     notify_filter: annual_report
 
   - name: "Reitir fasteignafélag hf."
     ticker: REITIR
     sector: Real Estate
-    ir_url: "https://www.reitir.is/fjarfestar/fjarhagsupplysingar"
-    fetch_type: js
-    open_selector: "button span.mr-6"  # year dropdown trigger (Headless UI menu)
-    tab_selector: "div[role='menuitem']"
-    link_pattern: null  # Prismic CDN URLs — take all PDFs, rely on classification
+    fetch_type: url_template
+    url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/REITIR-Y-{year}.pdf"
+    start_year: 2025
     notify_filter: annual_report
 
   - name: "Sjóvá-Almennar tryggingar hf."
     ticker: SJOVA
     sector: Insurance
-    ir_url: "https://www.sjova.is/sjova/upplysingagjof/fjarfestar/fjarfestaupplysingar-fyrri-ara"
-    fetch_type: js
-    wait_until: "load"
-    tab_selector: "button.Accordion-module__gn1fBq__trigger"
-    link_pattern: "rsreikn|annual.report|samstæðureikn|financial.statement"
+    fetch_type: url_template
+    url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/SJOVA-Y-{year}.pdf"
+    start_year: 2025
     notify_filter: annual_report
 
   - name: "Skel fjárfestingafélag hf."
     ticker: SKEL
     sector: Investment
-    ir_url: "https://skel.is/fjarfestar/arsreikningar"
-    fetch_type: js
-    tab_selector: "button.TabsLink_tabsLink__mZ__A"
-    link_pattern: null  # dedicated annual reports page — take all PDFs
+    fetch_type: url_template
+    url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/SKEL-Y-{year}.pdf"
+    start_year: 2025
     notify_filter: annual_report
 
   - name: "Síldarvinnslan hf."
     ticker: SVN
     sector: Fisheries
-    ir_url: "https://svn.is/fjarfestar/uppgjor-og-arsreikningar/"
-    fetch_type: static
-    link_pattern: "rsreikn|annual.report|samstæðureikn|financial.statement"
+    fetch_type: url_template
+    url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/SVN-Y-{year}.pdf"
+    start_year: 2025
     notify_filter: annual_report
 
   - name: "Sýn hf."
     ticker: SYN
     sector: Telecoms
-    ir_url: "https://www.syn.is/fjarfestatengsl/arshlutareikningar"
-    fetch_type: static
-    link_pattern: "rsreikn|annual.report|samstæðureikn|financial.statement"
+    fetch_type: url_template
+    url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/SYN-Y-{year}.pdf"
+    start_year: 2025
     notify_filter: annual_report

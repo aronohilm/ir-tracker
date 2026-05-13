@@ -440,7 +440,7 @@ def scan_company(company: dict, state: dict, download: bool = True) -> list[dict
     """
     name = company["name"]
     ticker = company.get("ticker", name)
-    url = company["ir_url"]
+    url = company.get("ir_url", "")
     fetch_type = company.get("fetch_type", "static")
     link_pattern = company.get("link_pattern")
     tab_selector = company.get("tab_selector")

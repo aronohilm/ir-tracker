@@ -222,10 +222,16 @@
         "text": "Report",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-08T13:02:52.471000+00:00"
+      },
+      "87eb46fb5f52": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/EIM-Y-2025.pdf",
+        "text": "Annual Report 2025",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-13T14:10:03.676844+00:00"
       }
     },
-    "last_scan": "2026-05-13T10:06:19.870438+00:00",
-    "total_documents": 37
+    "last_scan": "2026-05-13T14:10:03.676864+00:00",
+    "total_documents": 1
   },
   "FESTI": {
     "known": {
@@ -276,10 +282,16 @@
         "text": "Ársreikningur",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-08T16:49:53.234612+00:00"
+      },
+      "7f6e272d880f": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/FESTI-Y-2025.pdf",
+        "text": "Annual Report 2025",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-13T14:10:05.198121+00:00"
       }
     },
-    "last_scan": "2026-05-13T10:06:21.171035+00:00",
-    "total_documents": 8
+    "last_scan": "2026-05-13T14:10:05.198135+00:00",
+    "total_documents": 1
   },
   "HAGA": {
     "known": {
@@ -438,10 +450,16 @@
         "text": "hagar-arsreikningur-31-5-2019-isl.pdf",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-08T21:35:53.817589+00:00"
+      },
+      "87ee0e15f99b": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/HAGA-Y-2025.pdf",
+        "text": "Annual Report 2025",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-13T14:10:06.764102+00:00"
       }
     },
-    "last_scan": "2026-05-13T10:06:23.006812+00:00",
-    "total_documents": 26
+    "last_scan": "2026-05-13T14:10:06.764114+00:00",
+    "total_documents": 1
   },
   "HAMP": {
     "known": {
@@ -516,10 +534,16 @@
         "text": "Hampidjan-hf.-Arsreikningur-2025-1.pdf",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-08T23:52:53.791368+00:00"
+      },
+      "92158e2873a5": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/HAMP-Y-2025.pdf",
+        "text": "Annual Report 2025",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-13T14:10:08.286187+00:00"
       }
     },
-    "last_scan": "2026-05-13T10:06:29.214345+00:00",
-    "total_documents": 2
+    "last_scan": "2026-05-13T14:10:08.286206+00:00",
+    "total_documents": 1
   },
   "ICESEA": {
     "known": {
@@ -624,10 +648,16 @@
         "text": "2019 Annual ReportDownload hereDownload",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-08T23:53:24.075976+00:00"
+      },
+      "c543eefdf19e": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/ICESEA-Y-2025.pdf",
+        "text": "Annual Report 2025",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-13T14:10:12.841887+00:00"
       }
     },
-    "last_scan": "2026-05-12T10:11:48.651658+00:00",
-    "total_documents": 15
+    "last_scan": "2026-05-13T14:10:12.841903+00:00",
+    "total_documents": 1
   },
   "ISF": {
     "known": {
@@ -786,10 +816,16 @@
         "text": "Endurskoðaður samstæðureikningur Ramma hf. 2020",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-13T10:08:00.875337+00:00"
+      },
+      "ef3aeb915898": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/ISF-Y-2025.pdf",
+        "text": "Annual Report 2025",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-13T14:10:14.394894+00:00"
       }
     },
-    "last_scan": "2026-05-13T10:08:01.588904+00:00",
-    "total_documents": 13
+    "last_scan": "2026-05-13T14:10:14.394911+00:00",
+    "total_documents": 1
   },
   "KALD": {
     "known": {
@@ -840,10 +876,16 @@
         "text": "2019 - 12 mánaða uppgjör - Ársreikningur",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-08T13:03:05.986787+00:00"
+      },
+      "e69d2ca5c638": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/KALD-Y-2025.pdf",
+        "text": "Annual Report 2025",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-13T14:10:17.536669+00:00"
       }
     },
-    "last_scan": "2026-05-08T13:03:05.986789+00:00",
-    "total_documents": 8
+    "last_scan": "2026-05-13T14:10:17.536706+00:00",
+    "total_documents": 1
   },
   "SVN": {
     "known": {
@@ -918,10 +960,16 @@
         "text": "Kynning á uppgjör 4f 2023",
         "doc_type": "quarterly",
         "discovered_at": "2026-05-08T13:03:16.742970+00:00"
+      },
+      "281063080c48": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/SVN-Y-2025.pdf",
+        "text": "Annual Report 2025",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-13T14:10:26.807382+00:00"
       }
     },
-    "last_scan": "2026-05-13T10:09:48.270029+00:00",
-    "total_documents": 12
+    "last_scan": "2026-05-13T14:10:26.807397+00:00",
+    "total_documents": 1
   },
   "ARION": {
     "known": {
@@ -978,10 +1026,16 @@
         "text": "Ársreikningur",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-08T22:22:06.038729+00:00"
+      },
+      "faa2f40f170e": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/ARION-Y-2025.pdf",
+        "text": "Annual Report 2025",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-13T14:09:52.841031+00:00"
       }
     },
-    "last_scan": "2026-05-13T10:04:55.891219+00:00",
-    "total_documents": 8
+    "last_scan": "2026-05-13T14:09:52.841042+00:00",
+    "total_documents": 1
   },
   "AMRQ": {
     "known": {
@@ -1098,10 +1152,16 @@
         "text": "27 May 2021Extractive Sector Transparency Measures Act – 2020 Annual Report",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-08T23:51:54.964642+00:00"
+      },
+      "15244d99be92": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/AMRQ-Y-2025.pdf",
+        "text": "Annual Report 2025",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-13T14:09:57.492080+00:00"
       }
     },
-    "last_scan": "2026-05-13T10:05:31.425434+00:00",
-    "total_documents": 18
+    "last_scan": "2026-05-13T14:09:57.492103+00:00",
+    "total_documents": 1
   },
   "EIK": {
     "known": {
@@ -1248,10 +1308,16 @@
         "text": "Ársskýrsla 2007",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-08T21:50:47.260129+00:00"
+      },
+      "e96eeeb3a2b5": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/EIK-Y-2025.pdf",
+        "text": "Annual Report 2025",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-13T14:10:02.134720+00:00"
       }
     },
-    "last_scan": "2026-05-13T10:06:18.153606+00:00",
-    "total_documents": 18
+    "last_scan": "2026-05-13T14:10:02.134736+00:00",
+    "total_documents": 1
   },
   "BRIM": {
     "known": {
@@ -1446,10 +1512,16 @@
         "text": "8aa71a1c-40ec-426c-a2bc-671b9dddddff_Arsreikningur+HB+Granda+2016.pdf",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-08T23:03:32.720318+00:00"
+      },
+      "d870486496f8": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/BRIM-Y-2025.pdf",
+        "text": "Annual Report 2025",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-13T14:10:00.606089+00:00"
       }
     },
-    "last_scan": "2026-05-13T10:06:16.643696+00:00",
-    "total_documents": 10
+    "last_scan": "2026-05-13T14:10:00.606107+00:00",
+    "total_documents": 1
   },
   "SIMINN": {
     "known": {
@@ -1512,10 +1584,16 @@
         "text": "Ársreikningur 2023",
         "doc_type": "annual_report",
         "discovered_at": "2024-03-01T00:00:00+00:00"
+      },
+      "66929d09a2bb": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/SIMINN-Y-2025.pdf",
+        "text": "Annual Report 2025",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-13T14:09:51.301345+00:00"
       }
     },
-    "last_scan": "2026-05-13T10:04:35.290032+00:00",
-    "total_documents": 2
+    "last_scan": "2026-05-13T14:09:51.301362+00:00",
+    "total_documents": 1
   },
   "BERA": {
     "known": {
@@ -1548,10 +1626,16 @@
         "text": "ÖES - Ársreikningur feb 2021 Samstæða skv.undirritað.pdf",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-08T23:30:00.000000+00:00"
+      },
+      "decb506a186b": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/BERA-Y-2025.pdf",
+        "text": "Annual Report 2025",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-13T14:09:59.050881+00:00"
       }
     },
-    "last_scan": "2026-05-13T10:05:37.300313+00:00",
-    "total_documents": 4
+    "last_scan": "2026-05-13T14:09:59.050944+00:00",
+    "total_documents": 1
   },
   "HEIMAR": {
     "known": {
@@ -1710,10 +1794,16 @@
         "text": "2009Árs­reikn­ing­ur 2009",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-08T21:57:52.852056+00:00"
+      },
+      "8775337b9cd8": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/HEIMAR-Y-2025.pdf",
+        "text": "Annual Report 2025",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-13T14:10:09.801271+00:00"
       }
     },
-    "last_scan": "2026-05-13T10:06:39.286238+00:00",
-    "total_documents": 24
+    "last_scan": "2026-05-13T14:10:09.801282+00:00",
+    "total_documents": 1
   },
   "JBTM": {
     "known": {
@@ -1740,10 +1830,16 @@
         "text": "2022 Annual Report",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-08T23:30:00.000000+00:00"
+      },
+      "296fbc394d3c": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/JBTM-Y-2025.pdf",
+        "text": "Annual Report 2025",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-13T14:10:15.982289+00:00"
       }
     },
-    "last_scan": "2026-05-13T10:08:02.849209+00:00",
-    "total_documents": 4
+    "last_scan": "2026-05-13T14:10:15.982305+00:00",
+    "total_documents": 1
   },
   "SYN": {
     "known": {
@@ -1812,10 +1908,16 @@
         "text": "Arsreikningur_2015.pdf",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-08T13:34:08.040454+00:00"
+      },
+      "0d64bb96701d": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/SYN-Y-2025.pdf",
+        "text": "Annual Report 2025",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-13T14:10:28.373664+00:00"
       }
     },
-    "last_scan": "2026-05-13T10:09:49.578904+00:00",
-    "total_documents": 11
+    "last_scan": "2026-05-13T14:10:28.373690+00:00",
+    "total_documents": 1
   },
   "SKEL": {
     "known": {
@@ -2322,10 +2424,16 @@
         "text": "Tilkynning172 kB",
         "doc_type": "agm",
         "discovered_at": "2026-05-13T10:09:46.593362+00:00"
+      },
+      "34abb454c410": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/SKEL-Y-2025.pdf",
+        "text": "Annual Report 2025",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-13T14:10:25.282249+00:00"
       }
     },
-    "last_scan": "2026-05-13T10:09:46.593394+00:00",
-    "total_documents": 84
+    "last_scan": "2026-05-13T14:10:25.282263+00:00",
+    "total_documents": 1
   },
   "SJOVA": {
     "known": {
@@ -2400,10 +2508,16 @@
         "text": "Ársreikningur 2014",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-08T14:29:48.019727+00:00"
+      },
+      "04a3891e60c4": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/SJOVA-Y-2025.pdf",
+        "text": "Annual Report 2025",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-13T14:10:23.715735+00:00"
       }
     },
-    "last_scan": "2026-05-13T10:09:29.508031+00:00",
-    "total_documents": 12
+    "last_scan": "2026-05-13T14:10:23.715749+00:00",
+    "total_documents": 1
   },
   "REITIR": {
     "known": {
@@ -3120,10 +3234,16 @@
         "text": "agJdhKYofJOwHGh6_Reitir1F2026afkomukynning.pdf",
         "doc_type": "investor_presentation",
         "discovered_at": "2026-05-12T10:12:44.679876+00:00"
+      },
+      "1bee55606deb": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/REITIR-Y-2025.pdf",
+        "text": "Annual Report 2025",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-13T14:10:22.161320+00:00"
       }
     },
-    "last_scan": "2026-05-13T10:08:57.110838+00:00",
-    "total_documents": 119
+    "last_scan": "2026-05-13T14:10:22.161337+00:00",
+    "total_documents": 1
   },
   "NOVA": {
     "known": {
@@ -3864,10 +3984,16 @@
         "text": "Öryggisstefna",
         "doc_type": "pdf",
         "discovered_at": "2026-05-08T14:59:18.359916+00:00"
+      },
+      "ce81c9ea2234": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/NOVA-Y-2025.pdf",
+        "text": "Annual Report 2025",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-13T14:10:19.112091+00:00"
       }
     },
-    "last_scan": "2026-05-13T10:08:16.186932+00:00",
-    "total_documents": 123
+    "last_scan": "2026-05-13T14:10:19.112107+00:00",
+    "total_documents": 1
   },
   "KVIKA": {
     "known": {
@@ -4038,10 +4164,16 @@
         "text": "Árshlutareikningur 30.6.2016",
         "doc_type": "quarterly",
         "discovered_at": "2026-05-08T15:10:24.998390+00:00"
+      },
+      "d20a5ba2b3e0": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/KVIKA-Y-2025.pdf",
+        "text": "Annual Report 2025",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-13T14:09:49.769646+00:00"
       }
     },
-    "last_scan": "2026-05-13T10:04:12.703342+00:00",
-    "total_documents": 28
+    "last_scan": "2026-05-13T14:09:49.769658+00:00",
+    "total_documents": 1
   },
   "ISB": {
     "known": {
@@ -4392,10 +4524,16 @@
         "text": "Annual_Report_islandsbanki_2010.pdf",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-08T21:37:31.900685+00:00"
+      },
+      "1b91d08b86fa": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/ISB-Y-2025.pdf",
+        "text": "Annual Report 2025",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-13T14:09:54.403365+00:00"
       }
     },
-    "last_scan": "2026-05-13T10:05:24.573218+00:00",
-    "total_documents": 58
+    "last_scan": "2026-05-13T14:09:54.403399+00:00",
+    "total_documents": 1
   },
   "ICEAIR": {
     "known": {
@@ -4518,10 +4656,16 @@
         "text": "Annual Report 2023",
         "doc_type": "annual_report",
         "discovered_at": "2023-12-31T00:00:00+00:00"
+      },
+      "afe71f99f32e": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/ICEAIR-Y-2025.pdf",
+        "text": "Annual Report 2025",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-13T14:10:11.326407+00:00"
       }
     },
-    "last_scan": "2026-05-13T10:06:44.084917+00:00",
-    "total_documents": 15
+    "last_scan": "2026-05-13T14:10:11.326421+00:00",
+    "total_documents": 1
   },
   "ALVO": {
     "known": {
@@ -4556,8 +4700,8 @@
         "discovered_at": "2026-05-13T13:42:56.946301+00:00"
       }
     },
-    "last_scan": "2026-05-13T13:42:56.946304+00:00",
-    "total_documents": 5
+    "last_scan": "2026-05-13T14:09:55.944216+00:00",
+    "total_documents": 1
   },
   "OCS": {
     "known": {
@@ -4580,7 +4724,7 @@
         "discovered_at": "2026-05-13T13:44:09.934053+00:00"
       }
     },
-    "last_scan": "2026-05-13T13:44:09.934055+00:00",
-    "total_documents": 3
+    "last_scan": "2026-05-13T14:10:20.649030+00:00",
+    "total_documents": 1
   }
 }
