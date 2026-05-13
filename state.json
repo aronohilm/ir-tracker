@@ -4522,5 +4522,65 @@
     },
     "last_scan": "2026-05-13T10:06:44.084917+00:00",
     "total_documents": 15
+  },
+  "ALVO": {
+    "known": {
+      "3b4df115e4ff": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/ALVO-Y-2020.pdf",
+        "text": "Annual Report 2020",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-13T13:42:56.946274+00:00"
+      },
+      "9174357bfd9e": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/ALVO-Y-2022.pdf",
+        "text": "Annual Report 2022",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-13T13:42:56.946290+00:00"
+      },
+      "582f5a3c6f3e": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/ALVO-Y-2023.pdf",
+        "text": "Annual Report 2023",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-13T13:42:56.946295+00:00"
+      },
+      "22a5ca63b062": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/ALVO-Y-2024.pdf",
+        "text": "Annual Report 2024",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-13T13:42:56.946298+00:00"
+      },
+      "89eaaa6d60c0": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/ALVO-Y-2025.pdf",
+        "text": "Annual Report 2025",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-13T13:42:56.946301+00:00"
+      }
+    },
+    "last_scan": "2026-05-13T13:42:56.946304+00:00",
+    "total_documents": 5
+  },
+  "OCS": {
+    "known": {
+      "e1bb6fed5e0f": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/OCS-Y-2023.pdf",
+        "text": "Annual Report 2023",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-13T13:44:09.934036+00:00"
+      },
+      "3f97ce093c7b": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/OCS-Y-2024.pdf",
+        "text": "Annual Report 2024",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-13T13:44:09.934049+00:00"
+      },
+      "2de06c2f21c5": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/OCS-Y-2025.pdf",
+        "text": "Annual Report 2025",
+        "doc_type": "annual_report",
+        "discovered_at": "2026-05-13T13:44:09.934053+00:00"
+      }
+    },
+    "last_scan": "2026-05-13T13:44:09.934055+00:00",
+    "total_documents": 3
   }
 }

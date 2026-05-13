@@ -58,8 +58,10 @@ companies:
     ticker: ALVO
     sector: Healthcare
     ir_url: "https://investors.alvotech.com/financials"
-    fetch_type: js
-    link_pattern: "rsreikn|annual.report|samstæðureikn|financial.statement"
+    fetch_type: url_template
+    url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/ALVO-Y-{year}.pdf"
+    start_year: 2020
+    link_pattern: null
     notify_filter: annual_report
 
   - name: "Amaroq Minerals Ltd."
@@ -192,8 +194,10 @@ companies:
     ticker: OCS
     sector: Healthcare
     ir_url: "https://investors.oculis.com/disclosures"
-    fetch_type: js
-    link_pattern: "rsreikn|annual.report|samstæðureikn|financial.statement"
+    fetch_type: url_template
+    url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/OCS-Y-{year}.pdf"
+    start_year: 2020
+    link_pattern: null
     notify_filter: annual_report
 
   - name: "Reitir fasteignafélag hf."

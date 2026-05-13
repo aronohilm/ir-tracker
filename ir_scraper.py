@@ -263,10 +263,78 @@ def fetch_js(url: str, tab_selector: str | None = None,
         return None
 
 
+SEC_HEADERS = {
+    "User-Agent": "IR-Tracker aronoh2650@gmail.com",
+    "Accept-Encoding": "gzip, deflate",
+}
+
+
+def fetch_edgar(cik: str) -> str | None:
+    """Fetch 20-F filings from SEC EDGAR submissions API and return synthetic HTML."""
+    padded = cik.zfill(10)
+    url = f"https://data.sec.gov/submissions/CIK{padded}.json"
+    try:
+        resp = requests.get(url, headers=SEC_HEADERS, timeout=20)
+        resp.raise_for_status()
+        data = resp.json()
+    except requests.RequestException as e:
+        log.error(f"EDGAR submissions fetch failed for CIK {cik}: {e}")
+        return None
+
+    recent = data.get("filings", {}).get("recent", {})
+    forms = recent.get("form", [])
+    dates = recent.get("filingDate", [])
+    accessions = recent.get("accessionNumber", [])
+    primary_docs = recent.get("primaryDocument", [])
+    numeric_cik = int(cik)
+
+    links = []
+    for i, form in enumerate(forms):
+        if form == "20-F":
+            acc_clean = accessions[i].replace("-", "")
+            primary = primary_docs[i] if i < len(primary_docs) else ""
+            if primary:
+                doc_url = (
+                    f"https://www.sec.gov/Archives/edgar/data/"
+                    f"{numeric_cik}/{acc_clean}/{primary}"
+                )
+                links.append(
+                    f'<a href="{doc_url}">Annual Report 20-F {dates[i]}</a>'
+                )
+
+    log.info(f"  EDGAR: found {len(links)} 20-F filing(s) for CIK {cik}")
+    return "<html><body>" + "\n".join(links) + "</body></html>"
+
+
+def fetch_url_template(template: str, start_year: int) -> str | None:
+    """Probe a URL template with {year} for each year from start_year to now+1."""
+    current_year = datetime.now(timezone.utc).year
+    links = []
+    for year in range(start_year, current_year + 2):
+        url = template.replace("{year}", str(year))
+        try:
+            resp = requests.head(url, headers=HEADERS, timeout=10, allow_redirects=True)
+            if resp.status_code == 200:
+                log.info(f"  url_template: found {url}")
+                links.append(f'<a href="{url}">Annual Report {year}</a>')
+            else:
+                log.info(f"  url_template: {year} → {resp.status_code}, skipping")
+        except requests.RequestException as e:
+            log.warning(f"  url_template: HEAD failed for {year}: {e}")
+    return "<html><body>" + "\n".join(links) + "</body></html>"
+
+
 def fetch_page(url: str, fetch_type: str, tab_selector: str | None = None,
                wait_until: str = "networkidle",
                open_selector: str | None = None,
-               tab_text_filter: str | None = None) -> str | None:
+               tab_text_filter: str | None = None,
+               cik: str | None = None,
+               url_template: str | None = None,
+               start_year: int = 2020) -> str | None:
+    if fetch_type == "edgar":
+        return fetch_edgar(cik or "")
+    if fetch_type == "url_template":
+        return fetch_url_template(url_template or url, start_year)
     if fetch_type == "js":
         return fetch_js(url, tab_selector=tab_selector, wait_until=wait_until,
                         open_selector=open_selector, tab_text_filter=tab_text_filter)
@@ -304,7 +372,10 @@ def extract_document_links(html: str, base_url: str,
 
         # Only documents we care about
         ext = Path(parsed.path).suffix.lower()
-        if ext not in (".pdf", ".xlsx", ".xls", ".zip", ".docx"):
+        allowed_exts = {".pdf", ".xlsx", ".xls", ".zip", ".docx"}
+        if parsed.netloc.endswith("sec.gov"):
+            allowed_exts.add(".htm")
+        if ext not in allowed_exts:
             continue
 
         # Deduplicate
@@ -377,11 +448,15 @@ def scan_company(company: dict, state: dict, download: bool = True) -> list[dict
     tab_text_filter = company.get("tab_text_filter")
     wait_until = company.get("wait_until", "networkidle")
     notify_filter = company.get("notify_filter", "all")
+    cik = company.get("cik")
+    url_template = company.get("url_template")
+    start_year = company.get("start_year", 2020)
 
     log.info(f"Scanning: {name} ({ticker})")
 
     html = fetch_page(url, fetch_type, tab_selector=tab_selector, wait_until=wait_until,
-                      open_selector=open_selector, tab_text_filter=tab_text_filter)
+                      open_selector=open_selector, tab_text_filter=tab_text_filter,
+                      cik=cik, url_template=url_template, start_year=start_year)
     if not html:
         log.error(f"Failed to fetch page for {name}")
         return []
