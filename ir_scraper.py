@@ -306,7 +306,7 @@ def fetch_edgar(cik: str) -> str | None:
     return "<html><body>" + "\n".join(links) + "</body></html>"
 
 
-def fetch_url_template(template: str, start_year: int) -> str | None:
+def fetch_url_template(template: str, start_year: int, ticker: str = "") -> str | None:
     """Probe a URL template with {year} for each year from start_year to now+1."""
     current_year = datetime.now(timezone.utc).year
     links = []
@@ -316,7 +316,8 @@ def fetch_url_template(template: str, start_year: int) -> str | None:
             resp = requests.head(url, headers=HEADERS, timeout=10, allow_redirects=True)
             if resp.status_code == 200:
                 log.info(f"  url_template: found {url}")
-                links.append(f'<a href="{url}">Annual Report {year}</a>')
+                label = f"{ticker} - Ársreikningur - {year}" if ticker else f"Ársreikningur {year}"
+                links.append(f'<a href="{url}">{label}</a>')
             else:
                 log.info(f"  url_template: {year} → {resp.status_code}, skipping")
         except requests.RequestException as e:
@@ -330,11 +331,12 @@ def fetch_page(url: str, fetch_type: str, tab_selector: str | None = None,
                tab_text_filter: str | None = None,
                cik: str | None = None,
                url_template: str | None = None,
-               start_year: int = 2020) -> str | None:
+               start_year: int = 2020,
+               ticker: str = "") -> str | None:
     if fetch_type == "edgar":
         return fetch_edgar(cik or "")
     if fetch_type == "url_template":
-        return fetch_url_template(url_template or url, start_year)
+        return fetch_url_template(url_template or url, start_year, ticker=ticker)
     if fetch_type == "js":
         return fetch_js(url, tab_selector=tab_selector, wait_until=wait_until,
                         open_selector=open_selector, tab_text_filter=tab_text_filter)
@@ -456,7 +458,8 @@ def scan_company(company: dict, state: dict, download: bool = True) -> list[dict
 
     html = fetch_page(url, fetch_type, tab_selector=tab_selector, wait_until=wait_until,
                       open_selector=open_selector, tab_text_filter=tab_text_filter,
-                      cik=cik, url_template=url_template, start_year=start_year)
+                      cik=cik, url_template=url_template, start_year=start_year,
+                      ticker=ticker)
     if not html:
         log.error(f"Failed to fetch page for {name}")
         return []
