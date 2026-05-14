@@ -191,6 +191,14 @@ companies:
     start_year: 2025
     notify_filter: annual_report
 
+  - name: "Skagi hf."
+    ticker: SKAGI
+    sector: Fisheries
+    fetch_type: url_template
+    url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/SKAGI-Y-{year}.pdf"
+    start_year: 2020
+    notify_filter: annual_report
+
   - name: "Skel fjárfestingafélag hf."
     ticker: SKEL
     sector: Investment
