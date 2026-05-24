@@ -46,7 +46,7 @@ jobs:
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
             python main.py --dry-run --output-json new_docs.json
           else
-            python main.py --output-json new_docs.json
+            python main.py --no-download --output-json new_docs.json
           fi
 
       - name: Show results summary
@@ -64,11 +64,3 @@ jobs:
             git push
           fi
 
-      - name: Upload documents as artifacts
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: ir-documents-${{ github.run_id }}
-          path: downloads/
-          retention-days: 90
-          if-no-files-found: ignore
