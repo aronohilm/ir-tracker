@@ -8,8 +8,8 @@ IR Tracker monitors Icelandic company investor relations pages for new annual re
 
 ## Branches
 
-- **`main`** — original approach using `requests`/Playwright to scrape each company's IR website directly. Preserved as backup.
-- **`cloudfront-refactor`** — simplified approach (active development). All 25/26 Nasdaq Iceland companies serve annual reports from a shared CloudFront CDN at `https://d3q7p1a9jb8ol9.cloudfront.net/{TICKER}-Y-{year}.pdf`. Uses HEAD requests only, no Playwright, ~36s scan time.
+- **`main`** — active branch. All 26 Nasdaq Iceland companies use the shared CloudFront CDN at `https://d3q7p1a9jb8ol9.cloudfront.net/{TICKER}-Y-{year}.pdf`. HEAD requests only, no Playwright, ~36s scan time.
+- **`cloudfront-refactor`** — original refactor branch, now superseded by `main`.
 
 ## Running the scanner locally
 
@@ -38,11 +38,11 @@ pip install playwright && playwright install chromium
 
 The pipeline is: `main.py` → `ir_scraper.run_scan()` → `notify.send_notifications()`.
 
-**`ir_scraper.py`** — core engine with three fetch strategies:
+**`ir_scraper.py`** — core engine. All current companies use `fetch_url_template()`. The other strategies remain in the codebase for future use:
 
+- `fetch_url_template()` — probes a URL template with `{year}` via HEAD requests from `start_year` up to `current_year + 1`. Used for the CloudFront CDN pattern. No browser needed.
 - `fetch_static()` — `requests` + retry/backoff for plain HTML pages.
 - `fetch_js()` — Playwright (headless Chromium) for JS-rendered pages. Handles tab/accordion click-through, dropdown menus (`open_selector`), native `<select>` elements, and cookie banners.
-- `fetch_url_template()` — probes a URL template with `{year}` via HEAD requests from `start_year` up to `current_year + 1`. Used for the CloudFront CDN pattern. No browser needed.
 - `fetch_edgar()` — calls SEC EDGAR submissions API (`data.sec.gov/submissions/CIK{cik}.json`) to get 20-F filing URLs. Used for US-listed companies whose IR sites are Cloudflare-protected.
 
 `extract_document_links()` finds PDF/XLSX/ZIP/DOCX links (also `.htm` for `sec.gov` URLs) and classifies them via `DOC_TYPE_PATTERNS` regex dict.
@@ -77,25 +77,25 @@ Common fields:
 
 ## GitHub Actions
 
-The workflow runs at 09:30 Reykjavík time on weekdays (UTC 07:30, cron `30 7 * * 1-5`) on both `main` and `cloudfront-refactor` branches. It:
-1. Runs `python main.py` (or `--dry-run` if triggered manually)
+The workflow runs at 09:30 Reykjavík time on weekdays (UTC 07:30, cron `30 7 * * 1-5`). It:
+1. Runs `python main.py --output-json new_docs.json` (or `--dry-run` if triggered manually)
 2. Runs `summarize.py` to print results to the Actions log
 3. Commits updated `state.json` back with `[skip ci]` to avoid a loop
 4. Uploads downloaded files as artifacts (90-day retention)
 
-On `cloudfront-refactor` the Playwright install step is removed entirely.
+No Playwright install step needed.
 
 Required secrets: `NOTIFY_EMAIL_TO`, `NOTIFY_EMAIL_FROM`, `NOTIFY_EMAIL_PASS`. Optional: `SLACK_WEBHOOK_URL`.
 
 ## Adding a new company
 
-On `cloudfront-refactor`: check if the ticker exists on the CDN first:
+Check if the ticker exists on the CDN first:
 ```bash
 curl -I "https://d3q7p1a9jb8ol9.cloudfront.net/TICKER-Y-2025.pdf"
 ```
 If it returns 200, add a `url_template` entry to `companies.yml` with `start_year` set to the current year, then run `python main.py --no-download` to seed historical years into state.json.
 
-On `main`: start with `fetch_type: static`. If 0 documents found, switch to `fetch_type: js` and identify selectors with browser DevTools. Test with:
+If the company isn't on the CDN, use `fetch_type: static` (or `js` for JS-rendered pages, requires Playwright). Test with:
 ```bash
 python ir_scraper.py --company TICKER --dry-run
 ```

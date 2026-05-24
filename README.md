@@ -1,17 +1,16 @@
 # IR Document Tracker 🇮🇸
 
-Automatically monitors Icelandic company investor relations pages for new documents (annual reports, quarterly results, investor presentations) and sends you an email when something new appears.
+Automatically monitors all 26 Nasdaq Iceland listed companies for new annual reports and sends you an email when something new appears.
 
 ## How it works
 
 1. **Daily at 09:30 Reykjavík time** (weekdays), GitHub Actions runs the scan
-2. Fetches each company's IR page using `requests` (or Playwright for JS-heavy sites)  
-3. Extracts all PDF/XLSX document links
-4. Compares against `state.json` (the known-documents log committed to the repo)
-5. If new documents are found → downloads them → sends you an email
-6. Updates `state.json` and commits it back to the repo
+2. Probes the shared Nasdaq Iceland CloudFront CDN via HEAD requests — no browser, no scraping
+3. Compares found documents against `state.json` (the known-documents log committed to the repo)
+4. If new documents are found → downloads them → sends you an email
+5. Updates `state.json` and commits it back to the repo
 
-No server needed. No database. Completely free.
+No server needed. No database. Completely free. Each scan takes ~36 seconds.
 
 ---
 
@@ -62,21 +61,45 @@ Go to **Actions → IR Document Tracker → Run workflow** → check "dry run" f
 
 ## Adding companies
 
-Edit `companies.yml`. That's the only file you ever need to touch:
+Edit `companies.yml`. All current companies use the shared Nasdaq Iceland CloudFront CDN:
 
 ```yaml
 - name: "Hagar hf."
   ticker: HAGA
   sector: "Retail"
-  ir_url: "https://www.hagar.is/fjarfestatengslar/"
-  fetch_type: static    # or 'js' if the page needs JavaScript
-  link_pattern: null    # null = all PDFs; or a regex like "arsreikn|annual"
-  notify_filter: all    # or: annual_report, quarterly, investor_presentation
+  fetch_type: url_template
+  url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/HAGA-Y-{year}.pdf"
+  start_year: 2025
+  notify_filter: annual_report
 ```
 
-**How to find the IR URL:** go to the company's website, find "Fjárfestaupplýsingar" or "Investor Relations" and copy the URL of the page that lists their documents.
+**To check if a ticker is on the CDN:**
+```bash
+curl -I "https://d3q7p1a9jb8ol9.cloudfront.net/TICKER-Y-2025.pdf"
+```
+If it returns 200, add the entry above with `start_year` set to the current year, then run `python main.py --no-download` to seed historical years into state.json.
 
-**fetch_type:** start with `static`. If you see 0 documents found for a company, switch to `js` (requires Playwright, slightly slower).
+**For companies not on the CDN:** use `fetch_type: static` (or `fetch_type: js` for JS-rendered IR pages). See `CLAUDE.md` for details.
+
+---
+
+## Running locally
+
+```bash
+source .venv/bin/activate
+
+# Full dry run (no downloads, no notifications, no state changes)
+python main.py --dry-run
+
+# Scan a single company without touching global state
+python ir_scraper.py --company KVIKA --dry-run
+
+# Scan and detect but skip downloading files (use this to seed state.json)
+python main.py --no-download
+
+# Regenerate the HTML dashboard from current state.json
+python generate_dashboard.py
+```
 
 ---
 
@@ -92,22 +115,13 @@ ir-tracker/
 ├── main.py                   ← Entry point
 ├── ir_scraper.py             ← Page fetching & link extraction
 ├── notify.py                 ← Email & Slack notifications
+├── summarize.py              ← Prints scan results to Actions log
+├── generate_dashboard.py     ← Writes dashboard.html from state.json
+├── dashboard.html            ← Auto-generated HTML dashboard
 ├── requirements.txt          ← Python dependencies
 └── downloads/                ← Downloaded PDFs (uploaded as GH artifacts)
 ```
 
-## Document types auto-detected
-
-| Type | Detected when filename/link contains |
-|------|--------------------------------------|
-| `annual_report` | arsreikn, annual report, financial statement |
-| `quarterly` | Q1-Q4, árshluta, interim |
-| `investor_presentation` | fjarfesta, investor present, kynning |
-| `press_release` | frettatiln, press release |
-| `sustainability` | sjalfbaern, sustainab, esg |
-| `risk_report` | ahaettu, pillar, risk |
-| `agm` | adal, aðalfund, agm |
-
 ## Cost
 
-**Free.** GitHub Actions gives you 2,000 free minutes/month on private repos. This job takes ~2 minutes per run × 22 weekdays = ~44 minutes/month. Well within the free tier.
+**Free.** GitHub Actions gives you 2,000 free minutes/month on private repos. This job takes ~1 minute per run × 22 weekdays = ~22 minutes/month. Well within the free tier.
