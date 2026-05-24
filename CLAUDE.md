@@ -4,11 +4,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this project does
 
-IR Tracker monitors Icelandic company investor relations pages for new annual reports and sends email/Slack notifications when something new appears. It runs daily via GitHub Actions — no server, no database. State is stored in `state.json` and committed back to the repo after each scan.
+IR Tracker monitors Icelandic company investor relations pages for new annual and quarterly reports and sends email/Slack notifications when something new appears. It runs daily via GitHub Actions — no server, no database. State is stored in `state.json` and committed back to the repo after each scan.
 
 ## Branches
 
-- **`main`** — active branch. All 26 Nasdaq Iceland companies use the shared CloudFront CDN at `https://d3q7p1a9jb8ol9.cloudfront.net/{TICKER}-Y-{year}.pdf`. HEAD requests only, no Playwright, ~36s scan time.
+- **`main`** — active branch. All 26 Nasdaq Iceland companies use the shared CloudFront CDN. Annual reports follow `{TICKER}-Y-{year}.pdf`; quarterly reports follow `{TICKER}-3M/{6M}/{9M}-{year}.pdf`. HEAD requests only, no Playwright, ~36s scan time.
 - **`cloudfront-refactor`** — original refactor branch, now superseded by `main`.
 
 ## Running the scanner locally
@@ -40,7 +40,7 @@ The pipeline is: `main.py` → `ir_scraper.run_scan()` → `notify.send_notifica
 
 **`ir_scraper.py`** — core engine. All current companies use `fetch_url_template()`. The other strategies remain in the codebase for future use:
 
-- `fetch_url_template()` — probes a URL template with `{year}` via HEAD requests from `start_year` up to `current_year + 1`. Used for the CloudFront CDN pattern. No browser needed.
+- `fetch_url_template()` — probes a URL template with `{year}` via HEAD requests from `start_year` up to `current_year + 1`. Accepts `extra_templates` (list of `{template, start_year, label}`) to probe additional patterns (e.g. quarterly) in the same pass. Used for the CloudFront CDN pattern. No browser needed.
 - `fetch_static()` — `requests` + retry/backoff for plain HTML pages.
 - `fetch_js()` — Playwright (headless Chromium) for JS-rendered pages. Handles tab/accordion click-through, dropdown menus (`open_selector`), native `<select>` elements, and cookie banners.
 - `fetch_edgar()` — calls SEC EDGAR submissions API (`data.sec.gov/submissions/CIK{cik}.json`) to get 20-F filing URLs. Used for US-listed companies whose IR sites are Cloudflare-protected.
@@ -51,9 +51,10 @@ The pipeline is: `main.py` → `ir_scraper.run_scan()` → `notify.send_notifica
 
 **`companies.yml`** — the only file that needs editing. Fields vary by `fetch_type`:
 
-For `url_template` (used on `cloudfront-refactor` for all companies):
+For `url_template` (used on `main` for all companies):
 - `url_template`: URL with `{year}` placeholder, e.g. `https://d3q7p1a9jb8ol9.cloudfront.net/KVIKA-Y-{year}.pdf`
-- `start_year`: first year to probe (set to current year to only watch for new ones; `ir_url` is optional)
+- `start_year`: first year to probe for annual reports
+- `quarterly_start_year`: if set, also probes `-3M-`, `-6M-`, `-9M-` variants of `url_template` from this year onward (derived automatically — no need to list the quarterly URLs manually)
 
 For `edgar`:
 - `cik`: SEC CIK number (string)
@@ -93,7 +94,7 @@ Check if the ticker exists on the CDN first:
 ```bash
 curl -I "https://d3q7p1a9jb8ol9.cloudfront.net/TICKER-Y-2025.pdf"
 ```
-If it returns 200, add a `url_template` entry to `companies.yml` with `start_year` set to the current year, then run `python main.py --no-download` to seed historical years into state.json.
+If it returns 200, add a `url_template` entry to `companies.yml` with `start_year` and `quarterly_start_year` both set to the current year, then run `python main.py --no-download` to seed all annual and quarterly URLs into state.json.
 
 If the company isn't on the CDN, use `fetch_type: static` (or `js` for JS-rendered pages, requires Playwright). Test with:
 ```bash

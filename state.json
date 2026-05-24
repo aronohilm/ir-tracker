@@ -228,10 +228,34 @@
         "text": "EIM - Ársreikningur - 2025",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-13T14:10:03.676844+00:00"
+      },
+      "ef00d974d6eb": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/EIM-3M-2025.pdf",
+        "text": "EIM - Q1 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:26.527575+00:00"
+      },
+      "03e30ba2f7b3": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/EIM-3M-2026.pdf",
+        "text": "EIM - Q1 - 2026",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:26.527596+00:00"
+      },
+      "ad191d73fbdf": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/EIM-6M-2025.pdf",
+        "text": "EIM - Q2 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:26.527600+00:00"
+      },
+      "e5d080651f72": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/EIM-9M-2025.pdf",
+        "text": "EIM - Q3 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:26.527614+00:00"
       }
     },
-    "last_scan": "2026-05-22T10:33:43.743226+00:00",
-    "total_documents": 1
+    "last_scan": "2026-05-24T21:14:26.527617+00:00",
+    "total_documents": 5
   },
   "FESTI": {
     "known": {
@@ -288,10 +312,34 @@
         "text": "FESTI - Ársreikningur - 2025",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-13T14:10:05.198121+00:00"
+      },
+      "85f4d49e7099": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/FESTI-3M-2025.pdf",
+        "text": "FESTI - Q1 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:29.287195+00:00"
+      },
+      "cee02156a99b": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/FESTI-3M-2026.pdf",
+        "text": "FESTI - Q1 - 2026",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:29.287203+00:00"
+      },
+      "7fd119560d1f": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/FESTI-6M-2025.pdf",
+        "text": "FESTI - Q2 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:29.287205+00:00"
+      },
+      "0f50d8d7644c": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/FESTI-9M-2025.pdf",
+        "text": "FESTI - Q3 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:29.287214+00:00"
       }
     },
-    "last_scan": "2026-05-22T10:33:45.321858+00:00",
-    "total_documents": 1
+    "last_scan": "2026-05-24T21:14:29.287216+00:00",
+    "total_documents": 5
   },
   "HAGA": {
     "known": {
@@ -456,10 +504,28 @@
         "text": "HAGA - Ársreikningur - 2025",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-13T14:10:06.764102+00:00"
+      },
+      "d5161dfbb71b": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/HAGA-3M-2025.pdf",
+        "text": "HAGA - Q1 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:32.052946+00:00"
+      },
+      "1278e414469d": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/HAGA-6M-2025.pdf",
+        "text": "HAGA - Q2 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:32.052964+00:00"
+      },
+      "b995c676dc9f": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/HAGA-9M-2025.pdf",
+        "text": "HAGA - Q3 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:32.052967+00:00"
       }
     },
-    "last_scan": "2026-05-22T10:33:46.859302+00:00",
-    "total_documents": 1
+    "last_scan": "2026-05-24T21:14:32.052970+00:00",
+    "total_documents": 4
   },
   "HAMP": {
     "known": {
@@ -540,10 +606,28 @@
         "text": "HAMP - Ársreikningur - 2025",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-13T14:10:08.286187+00:00"
+      },
+      "c83a0c65a3fe": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/HAMP-3M-2025.pdf",
+        "text": "HAMP - Q1 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:34.778723+00:00"
+      },
+      "69bbfc74e5e6": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/HAMP-6M-2025.pdf",
+        "text": "HAMP - Q2 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:34.778734+00:00"
+      },
+      "e4db771eec24": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/HAMP-9M-2025.pdf",
+        "text": "HAMP - Q3 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:34.778736+00:00"
       }
     },
-    "last_scan": "2026-05-22T10:33:48.442821+00:00",
-    "total_documents": 1
+    "last_scan": "2026-05-24T21:14:34.778738+00:00",
+    "total_documents": 4
   },
   "ICESEA": {
     "known": {
@@ -654,10 +738,28 @@
         "text": "ICESEA - Ársreikningur - 2025",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-13T14:10:12.841887+00:00"
+      },
+      "37e2047e3b51": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/ICESEA-3M-2025.pdf",
+        "text": "ICESEA - Q1 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:43.886556+00:00"
+      },
+      "64985475afed": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/ICESEA-6M-2025.pdf",
+        "text": "ICESEA - Q2 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:43.886572+00:00"
+      },
+      "d3327a52c92d": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/ICESEA-9M-2025.pdf",
+        "text": "ICESEA - Q3 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:43.886575+00:00"
       }
     },
-    "last_scan": "2026-05-22T10:33:53.217401+00:00",
-    "total_documents": 1
+    "last_scan": "2026-05-24T21:14:43.886578+00:00",
+    "total_documents": 4
   },
   "ISF": {
     "known": {
@@ -822,10 +924,28 @@
         "text": "ISF - Ársreikningur - 2025",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-13T14:10:14.394894+00:00"
+      },
+      "d96539e66888": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/ISF-3M-2025.pdf",
+        "text": "ISF - Q1 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:46.658811+00:00"
+      },
+      "0f90301ec8bc": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/ISF-6M-2025.pdf",
+        "text": "ISF - Q2 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:46.658837+00:00"
+      },
+      "5e561ba6dea6": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/ISF-9M-2025.pdf",
+        "text": "ISF - Q3 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:46.658842+00:00"
       }
     },
-    "last_scan": "2026-05-22T10:33:54.795020+00:00",
-    "total_documents": 1
+    "last_scan": "2026-05-24T21:14:46.658845+00:00",
+    "total_documents": 4
   },
   "KALD": {
     "known": {
@@ -882,10 +1002,22 @@
         "text": "KALD - Ársreikningur - 2025",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-13T14:10:17.536669+00:00"
+      },
+      "dfecbfd99946": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/KALD-3M-2025.pdf",
+        "text": "KALD - Q1 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:52.073718+00:00"
+      },
+      "96849453ccbe": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/KALD-6M-2025.pdf",
+        "text": "KALD - Q2 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:52.073739+00:00"
       }
     },
-    "last_scan": "2026-05-22T10:33:57.941194+00:00",
-    "total_documents": 1
+    "last_scan": "2026-05-24T21:14:52.073743+00:00",
+    "total_documents": 3
   },
   "SVN": {
     "known": {
@@ -966,10 +1098,34 @@
         "text": "SVN - Ársreikningur - 2025",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-13T14:10:26.807382+00:00"
+      },
+      "fc982e8fa123": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/SVN-3M-2025.pdf",
+        "text": "SVN - Q1 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:15:12.354180+00:00"
+      },
+      "1b9d10266cc8": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/SVN-3M-2026.pdf",
+        "text": "SVN - Q1 - 2026",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:15:12.354189+00:00"
+      },
+      "bfbd4a0118f4": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/SVN-6M-2025.pdf",
+        "text": "SVN - Q2 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:15:12.354192+00:00"
+      },
+      "44a330e80e91": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/SVN-9M-2025.pdf",
+        "text": "SVN - Q3 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:15:12.354194+00:00"
       }
     },
-    "last_scan": "2026-05-22T10:34:09.781643+00:00",
-    "total_documents": 1
+    "last_scan": "2026-05-24T21:15:12.354196+00:00",
+    "total_documents": 5
   },
   "ARION": {
     "known": {
@@ -1032,10 +1188,34 @@
         "text": "ARION - Ársreikningur - 2025",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-13T14:09:52.841031+00:00"
+      },
+      "5e9032b5d790": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/ARION-3M-2025.pdf",
+        "text": "ARION - Q1 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:04.569402+00:00"
+      },
+      "afbfbe712747": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/ARION-3M-2026.pdf",
+        "text": "ARION - Q1 - 2026",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:04.569419+00:00"
+      },
+      "302720c6e8a5": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/ARION-6M-2025.pdf",
+        "text": "ARION - Q2 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:04.569423+00:00"
+      },
+      "95e312970181": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/ARION-9M-2025.pdf",
+        "text": "ARION - Q3 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:04.569427+00:00"
       }
     },
-    "last_scan": "2026-05-22T10:33:32.650256+00:00",
-    "total_documents": 1
+    "last_scan": "2026-05-24T21:14:04.569430+00:00",
+    "total_documents": 5
   },
   "AMRQ": {
     "known": {
@@ -1158,10 +1338,34 @@
         "text": "AMRQ - Ársreikningur - 2025",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-13T14:09:57.492080+00:00"
+      },
+      "326fda13766b": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/AMRQ-3M-2025.pdf",
+        "text": "AMRQ - Q1 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:14.012873+00:00"
+      },
+      "5d21dbd583bf": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/AMRQ-3M-2026.pdf",
+        "text": "AMRQ - Q1 - 2026",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:14.012890+00:00"
+      },
+      "7d2874d8b22a": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/AMRQ-6M-2025.pdf",
+        "text": "AMRQ - Q2 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:14.012896+00:00"
+      },
+      "cca1dd40d1b4": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/AMRQ-9M-2025.pdf",
+        "text": "AMRQ - Q3 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:14.012899+00:00"
       }
     },
-    "last_scan": "2026-05-22T10:33:37.401030+00:00",
-    "total_documents": 1
+    "last_scan": "2026-05-24T21:14:14.012902+00:00",
+    "total_documents": 5
   },
   "EIK": {
     "known": {
@@ -1314,10 +1518,34 @@
         "text": "EIK - Ársreikningur - 2025",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-13T14:10:02.134720+00:00"
+      },
+      "d1432672247e": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/EIK-3M-2025.pdf",
+        "text": "EIK - Q1 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:22.793773+00:00"
+      },
+      "acd9f338242f": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/EIK-3M-2026.pdf",
+        "text": "EIK - Q1 - 2026",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:22.793790+00:00"
+      },
+      "970d7c5bd41a": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/EIK-6M-2025.pdf",
+        "text": "EIK - Q2 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:22.793794+00:00"
+      },
+      "46401e9fe175": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/EIK-9M-2025.pdf",
+        "text": "EIK - Q3 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:22.793796+00:00"
       }
     },
-    "last_scan": "2026-05-22T10:33:42.164558+00:00",
-    "total_documents": 1
+    "last_scan": "2026-05-24T21:14:22.793799+00:00",
+    "total_documents": 5
   },
   "BRIM": {
     "known": {
@@ -1518,10 +1746,28 @@
         "text": "BRIM - Ársreikningur - 2025",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-13T14:10:00.606089+00:00"
+      },
+      "2065fef037c3": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/BRIM-3M-2025.pdf",
+        "text": "BRIM - Q1 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:19.787752+00:00"
+      },
+      "6102158181ec": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/BRIM-6M-2025.pdf",
+        "text": "BRIM - Q2 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:19.787767+00:00"
+      },
+      "a0f1e89f6df9": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/BRIM-9M-2025.pdf",
+        "text": "BRIM - Q3 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:19.787771+00:00"
       }
     },
-    "last_scan": "2026-05-22T10:33:40.564971+00:00",
-    "total_documents": 1
+    "last_scan": "2026-05-24T21:14:19.787774+00:00",
+    "total_documents": 4
   },
   "SIMINN": {
     "known": {
@@ -1590,10 +1836,34 @@
         "text": "SIMINN - Ársreikningur - 2025",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-13T14:09:51.301345+00:00"
+      },
+      "0d5b0773f744": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/SIMINN-3M-2025.pdf",
+        "text": "SIMINN - Q1 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:01.756892+00:00"
+      },
+      "6394f6608eb3": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/SIMINN-3M-2026.pdf",
+        "text": "SIMINN - Q1 - 2026",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:01.756906+00:00"
+      },
+      "cf70b8cd3e71": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/SIMINN-6M-2025.pdf",
+        "text": "SIMINN - Q2 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:01.756909+00:00"
+      },
+      "f1bebf4be43d": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/SIMINN-9M-2025.pdf",
+        "text": "SIMINN - Q3 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:01.756911+00:00"
       }
     },
-    "last_scan": "2026-05-22T10:33:31.060017+00:00",
-    "total_documents": 1
+    "last_scan": "2026-05-24T21:14:01.756914+00:00",
+    "total_documents": 5
   },
   "BERA": {
     "known": {
@@ -1634,7 +1904,7 @@
         "discovered_at": "2026-05-13T14:09:59.050881+00:00"
       }
     },
-    "last_scan": "2026-05-22T10:33:38.990215+00:00",
+    "last_scan": "2026-05-24T21:14:16.660132+00:00",
     "total_documents": 1
   },
   "HEIMAR": {
@@ -1800,10 +2070,34 @@
         "text": "HEIMAR - Ársreikningur - 2025",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-13T14:10:09.801271+00:00"
+      },
+      "f35ba334fa1b": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/HEIMAR-3M-2025.pdf",
+        "text": "HEIMAR - Q1 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:37.439375+00:00"
+      },
+      "4028394ac889": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/HEIMAR-3M-2026.pdf",
+        "text": "HEIMAR - Q1 - 2026",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:37.439388+00:00"
+      },
+      "4b5b7b9378b1": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/HEIMAR-6M-2025.pdf",
+        "text": "HEIMAR - Q2 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:37.439392+00:00"
+      },
+      "c075c9a46b99": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/HEIMAR-9M-2025.pdf",
+        "text": "HEIMAR - Q3 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:37.439394+00:00"
       }
     },
-    "last_scan": "2026-05-22T10:33:50.013684+00:00",
-    "total_documents": 1
+    "last_scan": "2026-05-24T21:14:37.439396+00:00",
+    "total_documents": 5
   },
   "JBTM": {
     "known": {
@@ -1836,10 +2130,34 @@
         "text": "JBTM - Ársreikningur - 2025",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-13T14:10:15.982289+00:00"
+      },
+      "c0b097fa3d4a": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/JBTM-3M-2025.pdf",
+        "text": "JBTM - Q1 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:49.363495+00:00"
+      },
+      "98e86b90d9f2": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/JBTM-3M-2026.pdf",
+        "text": "JBTM - Q1 - 2026",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:49.363507+00:00"
+      },
+      "0fcfbec65103": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/JBTM-6M-2025.pdf",
+        "text": "JBTM - Q2 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:49.363511+00:00"
+      },
+      "5efd8e421d49": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/JBTM-9M-2025.pdf",
+        "text": "JBTM - Q3 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:49.363514+00:00"
       }
     },
-    "last_scan": "2026-05-22T10:33:56.364157+00:00",
-    "total_documents": 1
+    "last_scan": "2026-05-24T21:14:49.363516+00:00",
+    "total_documents": 5
   },
   "SYN": {
     "known": {
@@ -1914,10 +2232,34 @@
         "text": "SYN - Ársreikningur - 2025",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-13T14:10:28.373664+00:00"
+      },
+      "bd0a28bdeef0": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/SYN-3M-2025.pdf",
+        "text": "SYN - Q1 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:15:15.193921+00:00"
+      },
+      "5b805d4556d9": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/SYN-3M-2026.pdf",
+        "text": "SYN - Q1 - 2026",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:15:15.193946+00:00"
+      },
+      "7043e9bf9a2f": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/SYN-6M-2025.pdf",
+        "text": "SYN - Q2 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:15:15.193951+00:00"
+      },
+      "c7a2c119a1c3": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/SYN-9M-2025.pdf",
+        "text": "SYN - Q3 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:15:15.193955+00:00"
       }
     },
-    "last_scan": "2026-05-22T10:34:11.363851+00:00",
-    "total_documents": 1
+    "last_scan": "2026-05-24T21:15:15.193959+00:00",
+    "total_documents": 5
   },
   "SKEL": {
     "known": {
@@ -2430,10 +2772,16 @@
         "text": "SKEL - Ársreikningur - 2025",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-13T14:10:25.282249+00:00"
+      },
+      "08833ece80e9": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/SKEL-6M-2025.pdf",
+        "text": "SKEL - Q2 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:15:09.320784+00:00"
       }
     },
-    "last_scan": "2026-05-22T10:34:08.208296+00:00",
-    "total_documents": 1
+    "last_scan": "2026-05-24T21:15:09.320802+00:00",
+    "total_documents": 2
   },
   "SJOVA": {
     "known": {
@@ -2514,10 +2862,34 @@
         "text": "SJOVA - Ársreikningur - 2025",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-13T14:10:23.715735+00:00"
+      },
+      "e768d8cdfaf8": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/SJOVA-3M-2025.pdf",
+        "text": "SJOVA - Q1 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:15:03.106781+00:00"
+      },
+      "ad17f3c09c1e": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/SJOVA-3M-2026.pdf",
+        "text": "SJOVA - Q1 - 2026",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:15:03.106803+00:00"
+      },
+      "c366bc7d4d5d": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/SJOVA-6M-2025.pdf",
+        "text": "SJOVA - Q2 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:15:03.106807+00:00"
+      },
+      "78d055d48050": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/SJOVA-9M-2025.pdf",
+        "text": "SJOVA - Q3 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:15:03.106810+00:00"
       }
     },
-    "last_scan": "2026-05-22T10:34:04.236844+00:00",
-    "total_documents": 1
+    "last_scan": "2026-05-24T21:15:03.106813+00:00",
+    "total_documents": 5
   },
   "REITIR": {
     "known": {
@@ -3240,10 +3612,34 @@
         "text": "REITIR - Ársreikningur - 2025",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-13T14:10:22.161320+00:00"
+      },
+      "30f7771abb5a": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/REITIR-3M-2025.pdf",
+        "text": "REITIR - Q1 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:15:00.249475+00:00"
+      },
+      "a471b85fafb5": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/REITIR-3M-2026.pdf",
+        "text": "REITIR - Q1 - 2026",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:15:00.249485+00:00"
+      },
+      "eb9e007829a1": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/REITIR-6M-2025.pdf",
+        "text": "REITIR - Q2 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:15:00.249488+00:00"
+      },
+      "96005c1367c9": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/REITIR-9M-2025.pdf",
+        "text": "REITIR - Q3 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:15:00.249490+00:00"
       }
     },
-    "last_scan": "2026-05-22T10:34:02.675939+00:00",
-    "total_documents": 1
+    "last_scan": "2026-05-24T21:15:00.249492+00:00",
+    "total_documents": 5
   },
   "NOVA": {
     "known": {
@@ -3990,10 +4386,34 @@
         "text": "NOVA - Ársreikningur - 2025",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-13T14:10:19.112091+00:00"
+      },
+      "3d48bc99de0c": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/NOVA-3M-2025.pdf",
+        "text": "NOVA - Q1 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:54.728033+00:00"
+      },
+      "fff432dac831": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/NOVA-3M-2026.pdf",
+        "text": "NOVA - Q1 - 2026",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:54.728055+00:00"
+      },
+      "6052339b5dd0": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/NOVA-6M-2025.pdf",
+        "text": "NOVA - Q2 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:54.728058+00:00"
+      },
+      "d137d0161c43": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/NOVA-9M-2025.pdf",
+        "text": "NOVA - Q3 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:54.728060+00:00"
       }
     },
-    "last_scan": "2026-05-22T10:33:59.515908+00:00",
-    "total_documents": 1
+    "last_scan": "2026-05-24T21:14:54.728063+00:00",
+    "total_documents": 5
   },
   "KVIKA": {
     "known": {
@@ -4170,10 +4590,34 @@
         "text": "KVIKA - Ársreikningur - 2025",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-13T14:09:49.769646+00:00"
+      },
+      "b682f1ea327f": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/KVIKA-3M-2025.pdf",
+        "text": "KVIKA - Q1 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:13:59.036997+00:00"
+      },
+      "22ba6a5094f0": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/KVIKA-3M-2026.pdf",
+        "text": "KVIKA - Q1 - 2026",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:13:59.037010+00:00"
+      },
+      "7a5fb21808d6": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/KVIKA-6M-2025.pdf",
+        "text": "KVIKA - Q2 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:13:59.037014+00:00"
+      },
+      "d1b117abded3": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/KVIKA-9M-2025.pdf",
+        "text": "KVIKA - Q3 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:13:59.037016+00:00"
       }
     },
-    "last_scan": "2026-05-22T10:33:29.483397+00:00",
-    "total_documents": 1
+    "last_scan": "2026-05-24T21:13:59.037018+00:00",
+    "total_documents": 5
   },
   "ISB": {
     "known": {
@@ -4530,10 +4974,34 @@
         "text": "ISB - Ársreikningur - 2025",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-13T14:09:54.403365+00:00"
+      },
+      "b54a26c6a166": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/ISB-3M-2025.pdf",
+        "text": "ISB - Q1 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:07.228412+00:00"
+      },
+      "aa3101bc38c8": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/ISB-3M-2026.pdf",
+        "text": "ISB - Q1 - 2026",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:07.228421+00:00"
+      },
+      "602d58e0f1af": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/ISB-6M-2025.pdf",
+        "text": "ISB - Q2 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:07.228423+00:00"
+      },
+      "7f0ebc05a5ee": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/ISB-9M-2025.pdf",
+        "text": "ISB - Q3 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:07.228424+00:00"
       }
     },
-    "last_scan": "2026-05-22T10:33:34.226607+00:00",
-    "total_documents": 1
+    "last_scan": "2026-05-24T21:14:07.228426+00:00",
+    "total_documents": 5
   },
   "ICEAIR": {
     "known": {
@@ -4662,10 +5130,34 @@
         "text": "ICEAIR - Ársreikningur - 2025",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-13T14:10:11.326407+00:00"
+      },
+      "840796e977cb": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/ICEAIR-3M-2025.pdf",
+        "text": "ICEAIR - Q1 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:41.173985+00:00"
+      },
+      "85440bc5dd64": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/ICEAIR-3M-2026.pdf",
+        "text": "ICEAIR - Q1 - 2026",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:41.173998+00:00"
+      },
+      "f634b148d012": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/ICEAIR-6M-2025.pdf",
+        "text": "ICEAIR - Q2 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:41.174000+00:00"
+      },
+      "94261bb03ac1": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/ICEAIR-9M-2025.pdf",
+        "text": "ICEAIR - Q3 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:41.174002+00:00"
       }
     },
-    "last_scan": "2026-05-22T10:33:51.608957+00:00",
-    "total_documents": 1
+    "last_scan": "2026-05-24T21:14:41.174004+00:00",
+    "total_documents": 5
   },
   "ALVO": {
     "known": {
@@ -4698,10 +5190,34 @@
         "text": "ALVO - Ársreikningur - 2025",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-13T13:42:56.946301+00:00"
+      },
+      "82cd91167473": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/ALVO-3M-2025.pdf",
+        "text": "ALVO - Q1 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:10.304516+00:00"
+      },
+      "f5263db91d90": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/ALVO-3M-2026.pdf",
+        "text": "ALVO - Q1 - 2026",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:10.304527+00:00"
+      },
+      "64c61b0de841": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/ALVO-6M-2025.pdf",
+        "text": "ALVO - Q2 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:10.304530+00:00"
+      },
+      "ae49d901a46b": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/ALVO-9M-2025.pdf",
+        "text": "ALVO - Q3 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:10.304532+00:00"
       }
     },
-    "last_scan": "2026-05-22T10:33:35.816266+00:00",
-    "total_documents": 1
+    "last_scan": "2026-05-24T21:14:10.304534+00:00",
+    "total_documents": 5
   },
   "OCS": {
     "known": {
@@ -4722,10 +5238,34 @@
         "text": "OCS - Ársreikningur - 2025",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-13T13:44:09.934053+00:00"
+      },
+      "5ab0bc1cebd9": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/OCS-3M-2025.pdf",
+        "text": "OCS - Q1 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:57.422057+00:00"
+      },
+      "68984579085c": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/OCS-3M-2026.pdf",
+        "text": "OCS - Q1 - 2026",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:57.422071+00:00"
+      },
+      "bf5ac4dd3584": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/OCS-6M-2025.pdf",
+        "text": "OCS - Q2 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:57.422074+00:00"
+      },
+      "ff8419c1b1b5": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/OCS-9M-2025.pdf",
+        "text": "OCS - Q3 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:14:57.422077+00:00"
       }
     },
-    "last_scan": "2026-05-22T10:34:01.094259+00:00",
-    "total_documents": 1
+    "last_scan": "2026-05-24T21:14:57.422079+00:00",
+    "total_documents": 5
   },
   "SKAGI": {
     "known": {
@@ -4764,9 +5304,33 @@
         "text": "SKAGI - Ársreikningur - 2025",
         "doc_type": "annual_report",
         "discovered_at": "2026-05-14T00:45:41.511420+00:00"
+      },
+      "8977575adc3e": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/SKAGI-3M-2025.pdf",
+        "text": "SKAGI - Q1 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:15:06.642961+00:00"
+      },
+      "3c802d4ac411": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/SKAGI-3M-2026.pdf",
+        "text": "SKAGI - Q1 - 2026",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:15:06.642979+00:00"
+      },
+      "646109a1e908": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/SKAGI-6M-2025.pdf",
+        "text": "SKAGI - Q2 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:15:06.642984+00:00"
+      },
+      "b90d5a91ef7d": {
+        "url": "https://d3q7p1a9jb8ol9.cloudfront.net/SKAGI-9M-2025.pdf",
+        "text": "SKAGI - Q3 - 2025",
+        "doc_type": "quarterly",
+        "discovered_at": "2026-05-24T21:15:06.642988+00:00"
       }
     },
-    "last_scan": "2026-05-22T10:34:06.610625+00:00",
-    "total_documents": 6
+    "last_scan": "2026-05-24T21:15:06.642991+00:00",
+    "total_documents": 10
   }
 }

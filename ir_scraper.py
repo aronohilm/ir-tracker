@@ -37,7 +37,7 @@ DOWNLOADS_DIR = Path(__file__).parent / "downloads"
 
 # Document type classifier based on filename / link text keywords
 DOC_TYPE_PATTERNS = {
-    "quarterly":                r"q[1-4].20\d\d|[áa]rshluta|interim|q[1-4]-20|[1-4]f.20\d\d",
+    "quarterly":                r"q[1-4].20\d\d|[áa]rshluta|interim|q[1-4]-20|[1-4]f.20\d\d|-3m-|-6m-|-9m-",
     "agm":                      r"adal|aðalfund|agm|annual.general",
     "risk_report":              r"ahaettu|pillar|risk",
     "sustainability":           r"sjalfbaern|sustainab|esg",
@@ -306,22 +306,30 @@ def fetch_edgar(cik: str) -> str | None:
     return "<html><body>" + "\n".join(links) + "</body></html>"
 
 
-def fetch_url_template(template: str, start_year: int, ticker: str = "") -> str | None:
-    """Probe a URL template with {year} for each year from start_year to now+1."""
+def fetch_url_template(template: str, start_year: int, ticker: str = "",
+                       extra_templates: list | None = None) -> str | None:
+    """Probe URL template(s) with {year} for each year from start_year to now+1."""
     current_year = datetime.now(timezone.utc).year
     links = []
-    for year in range(start_year, current_year + 2):
-        url = template.replace("{year}", str(year))
-        try:
-            resp = requests.head(url, headers=HEADERS, timeout=10, allow_redirects=True)
-            if resp.status_code == 200:
-                log.info(f"  url_template: found {url}")
-                label = f"{ticker} - Ársreikningur - {year}" if ticker else f"Ársreikningur {year}"
-                links.append(f'<a href="{url}">{label}</a>')
-            else:
-                log.info(f"  url_template: {year} → {resp.status_code}, skipping")
-        except requests.RequestException as e:
-            log.warning(f"  url_template: HEAD failed for {year}: {e}")
+
+    def _probe(tmpl: str, s_year: int, label_prefix: str) -> None:
+        for year in range(s_year, current_year + 2):
+            url = tmpl.replace("{year}", str(year))
+            try:
+                resp = requests.head(url, headers=HEADERS, timeout=10, allow_redirects=True)
+                if resp.status_code == 200:
+                    log.info(f"  url_template: found {url}")
+                    label = f"{ticker} - {label_prefix} - {year}" if ticker else f"{label_prefix} {year}"
+                    links.append(f'<a href="{url}">{label}</a>')
+                else:
+                    log.info(f"  url_template: {year} → {resp.status_code}, skipping")
+            except requests.RequestException as e:
+                log.warning(f"  url_template: HEAD failed for {year}: {e}")
+
+    _probe(template, start_year, "Ársreikningur")
+    for et in (extra_templates or []):
+        _probe(et["template"], et["start_year"], et.get("label", ""))
+
     return "<html><body>" + "\n".join(links) + "</body></html>"
 
 
@@ -332,11 +340,13 @@ def fetch_page(url: str, fetch_type: str, tab_selector: str | None = None,
                cik: str | None = None,
                url_template: str | None = None,
                start_year: int = 2020,
-               ticker: str = "") -> str | None:
+               ticker: str = "",
+               extra_templates: list | None = None) -> str | None:
     if fetch_type == "edgar":
         return fetch_edgar(cik or "")
     if fetch_type == "url_template":
-        return fetch_url_template(url_template or url, start_year, ticker=ticker)
+        return fetch_url_template(url_template or url, start_year, ticker=ticker,
+                                  extra_templates=extra_templates)
     if fetch_type == "js":
         return fetch_js(url, tab_selector=tab_selector, wait_until=wait_until,
                         open_selector=open_selector, tab_text_filter=tab_text_filter)
@@ -453,13 +463,22 @@ def scan_company(company: dict, state: dict, download: bool = True) -> list[dict
     cik = company.get("cik")
     url_template = company.get("url_template")
     start_year = company.get("start_year", 2020)
+    quarterly_start_year = company.get("quarterly_start_year")
+
+    extra_templates = None
+    if quarterly_start_year and url_template and "-Y-{year}" in url_template:
+        extra_templates = [
+            {"template": url_template.replace("-Y-{year}", "-3M-{year}"), "start_year": quarterly_start_year, "label": "Q1"},
+            {"template": url_template.replace("-Y-{year}", "-6M-{year}"), "start_year": quarterly_start_year, "label": "Q2"},
+            {"template": url_template.replace("-Y-{year}", "-9M-{year}"), "start_year": quarterly_start_year, "label": "Q3"},
+        ]
 
     log.info(f"Scanning: {name} ({ticker})")
 
     html = fetch_page(url, fetch_type, tab_selector=tab_selector, wait_until=wait_until,
                       open_selector=open_selector, tab_text_filter=tab_text_filter,
                       cik=cik, url_template=url_template, start_year=start_year,
-                      ticker=ticker)
+                      ticker=ticker, extra_templates=extra_templates)
     if not html:
         log.error(f"Failed to fetch page for {name}")
         return []

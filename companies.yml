@@ -13,7 +13,8 @@ companies:
     fetch_type: url_template
     url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/KVIKA-Y-{year}.pdf"
     start_year: 2025
-    notify_filter: annual_report
+    quarterly_start_year: 2025
+    notify_filter: all
 
   - name: "Síminn hf."
     ticker: SIMINN
@@ -21,7 +22,8 @@ companies:
     fetch_type: url_template
     url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/SIMINN-Y-{year}.pdf"
     start_year: 2025
-    notify_filter: annual_report
+    quarterly_start_year: 2025
+    notify_filter: all
 
   - name: "Arion banki hf."
     ticker: ARION
@@ -29,7 +31,8 @@ companies:
     fetch_type: url_template
     url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/ARION-Y-{year}.pdf"
     start_year: 2025
-    notify_filter: annual_report
+    quarterly_start_year: 2025
+    notify_filter: all
 
   - name: "Íslandsbanki hf."
     ticker: ISB
@@ -37,7 +40,8 @@ companies:
     fetch_type: url_template
     url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/ISB-Y-{year}.pdf"
     start_year: 2025
-    notify_filter: annual_report
+    quarterly_start_year: 2025
+    notify_filter: all
 
   - name: "Alvotech"
     ticker: ALVO
@@ -45,7 +49,8 @@ companies:
     fetch_type: url_template
     url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/ALVO-Y-{year}.pdf"
     start_year: 2025
-    notify_filter: annual_report
+    quarterly_start_year: 2025
+    notify_filter: all
 
   - name: "Amaroq Minerals Ltd."
     ticker: AMRQ
@@ -53,7 +58,8 @@ companies:
     fetch_type: url_template
     url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/AMRQ-Y-{year}.pdf"
     start_year: 2025
-    notify_filter: annual_report
+    quarterly_start_year: 2025
+    notify_filter: all
 
   - name: "Ölgerðin Egill Skallagrímsson hf."
     ticker: BERA
@@ -61,7 +67,8 @@ companies:
     fetch_type: url_template
     url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/BERA-Y-{year}.pdf"
     start_year: 2025
-    notify_filter: annual_report
+    quarterly_start_year: 2025
+    notify_filter: all
 
   - name: "Brim hf."
     ticker: BRIM
@@ -69,7 +76,8 @@ companies:
     fetch_type: url_template
     url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/BRIM-Y-{year}.pdf"
     start_year: 2025
-    notify_filter: annual_report
+    quarterly_start_year: 2025
+    notify_filter: all
 
   - name: "Eik fasteignafélag hf."
     ticker: EIK
@@ -77,7 +85,8 @@ companies:
     fetch_type: url_template
     url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/EIK-Y-{year}.pdf"
     start_year: 2025
-    notify_filter: annual_report
+    quarterly_start_year: 2025
+    notify_filter: all
 
   - name: "Eimskipafélag Íslands hf."
     ticker: EIM
@@ -85,7 +94,8 @@ companies:
     fetch_type: url_template
     url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/EIM-Y-{year}.pdf"
     start_year: 2025
-    notify_filter: annual_report
+    quarterly_start_year: 2025
+    notify_filter: all
 
   - name: "Festir hf."
     ticker: FESTI
@@ -93,7 +103,8 @@ companies:
     fetch_type: url_template
     url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/FESTI-Y-{year}.pdf"
     start_year: 2025
-    notify_filter: annual_report
+    quarterly_start_year: 2025
+    notify_filter: all
 
   - name: "Hagar hf."
     ticker: HAGA
@@ -101,7 +112,8 @@ companies:
     fetch_type: url_template
     url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/HAGA-Y-{year}.pdf"
     start_year: 2025
-    notify_filter: annual_report
+    quarterly_start_year: 2025
+    notify_filter: all
 
   - name: "Hampiðjan hf."
     ticker: HAMP
@@ -109,7 +121,8 @@ companies:
     fetch_type: url_template
     url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/HAMP-Y-{year}.pdf"
     start_year: 2025
-    notify_filter: annual_report
+    quarterly_start_year: 2025
+    notify_filter: all
 
   - name: "Heimar miðlun hf."
     ticker: HEIMAR
@@ -117,7 +130,8 @@ companies:
     fetch_type: url_template
     url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/HEIMAR-Y-{year}.pdf"
     start_year: 2025
-    notify_filter: annual_report
+    quarterly_start_year: 2025
+    notify_filter: all
 
   - name: "Icelandair Group hf."
     ticker: ICEAIR
@@ -125,7 +139,8 @@ companies:
     fetch_type: url_template
     url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/ICEAIR-Y-{year}.pdf"
     start_year: 2025
-    notify_filter: annual_report
+    quarterly_start_year: 2025
+    notify_filter: all
 
   - name: "Iceland Seafood International hf."
     ticker: ICESEA
@@ -133,7 +148,8 @@ companies:
     fetch_type: url_template
     url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/ICESEA-Y-{year}.pdf"
     start_year: 2025
-    notify_filter: annual_report
+    quarterly_start_year: 2025
+    notify_filter: all
 
   - name: "Ísfélagið hf."
     ticker: ISF
@@ -141,7 +157,8 @@ companies:
     fetch_type: url_template
     url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/ISF-Y-{year}.pdf"
     start_year: 2025
-    notify_filter: annual_report
+    quarterly_start_year: 2025
+    notify_filter: all
 
   - name: "JBT Marel Corporation"
     ticker: JBTM
@@ -149,7 +166,8 @@ companies:
     fetch_type: url_template
     url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/JBTM-Y-{year}.pdf"
     start_year: 2025
-    notify_filter: annual_report
+    quarterly_start_year: 2025
+    notify_filter: all
 
   - name: "Kaldalón hf."
     ticker: KALD
@@ -157,7 +175,8 @@ companies:
     fetch_type: url_template
     url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/KALD-Y-{year}.pdf"
     start_year: 2025
-    notify_filter: annual_report
+    quarterly_start_year: 2025
+    notify_filter: all
 
   - name: "Nova hf."
     ticker: NOVA
@@ -165,7 +184,8 @@ companies:
     fetch_type: url_template
     url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/NOVA-Y-{year}.pdf"
     start_year: 2025
-    notify_filter: annual_report
+    quarterly_start_year: 2025
+    notify_filter: all
 
   - name: "Oculis Holding plc"
     ticker: OCS
@@ -173,7 +193,8 @@ companies:
     fetch_type: url_template
     url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/OCS-Y-{year}.pdf"
     start_year: 2025
-    notify_filter: annual_report
+    quarterly_start_year: 2025
+    notify_filter: all
 
   - name: "Reitir fasteignafélag hf."
     ticker: REITIR
@@ -181,7 +202,8 @@ companies:
     fetch_type: url_template
     url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/REITIR-Y-{year}.pdf"
     start_year: 2025
-    notify_filter: annual_report
+    quarterly_start_year: 2025
+    notify_filter: all
 
   - name: "Sjóvá-Almennar tryggingar hf."
     ticker: SJOVA
@@ -189,7 +211,8 @@ companies:
     fetch_type: url_template
     url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/SJOVA-Y-{year}.pdf"
     start_year: 2025
-    notify_filter: annual_report
+    quarterly_start_year: 2025
+    notify_filter: all
 
   - name: "Skagi hf."
     ticker: SKAGI
@@ -197,7 +220,8 @@ companies:
     fetch_type: url_template
     url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/SKAGI-Y-{year}.pdf"
     start_year: 2020
-    notify_filter: annual_report
+    quarterly_start_year: 2025
+    notify_filter: all
 
   - name: "Skel fjárfestingafélag hf."
     ticker: SKEL
@@ -205,7 +229,8 @@ companies:
     fetch_type: url_template
     url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/SKEL-Y-{year}.pdf"
     start_year: 2025
-    notify_filter: annual_report
+    quarterly_start_year: 2025
+    notify_filter: all
 
   - name: "Síldarvinnslan hf."
     ticker: SVN
@@ -213,7 +238,8 @@ companies:
     fetch_type: url_template
     url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/SVN-Y-{year}.pdf"
     start_year: 2025
-    notify_filter: annual_report
+    quarterly_start_year: 2025
+    notify_filter: all
 
   - name: "Sýn hf."
     ticker: SYN
@@ -221,4 +247,5 @@ companies:
     fetch_type: url_template
     url_template: "https://d3q7p1a9jb8ol9.cloudfront.net/SYN-Y-{year}.pdf"
     start_year: 2025
-    notify_filter: annual_report
+    quarterly_start_year: 2025
+    notify_filter: all
